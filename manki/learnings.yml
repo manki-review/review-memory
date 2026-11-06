@@ -991,3 +991,15 @@
   scope: repo
   source: manki-review/manki#1068
   created_at: 2026-11-06
+- id: learn-1794002875284
+  content: 'User context on "src/related-repos.ts": Leaving the default in place.
+    Manki pins Codex `0.166.0` (`CODEX_CLI_VERSION`), and at tag `rust-v0.166.0`
+    the default MCP tool timeout is 300 seconds: `pub(crate) const
+    DEFAULT_TOOL_TIMEOUT: Duration = Duration::from_secs(300);` in
+    `codex-rs/codex-mcp/src/rmcp_client.rs:122`. A related repo tool call is
+    bounded at 62 seconds (60 for the fetch, 2 of slack for a waiter), well
+    under that. The Codex path also sets `stderrResetsStale`, so the 90 second
+    stale limit does not apply to it either.'
+  scope: repo
+  source: manki-review/manki#1068
+  created_at: 2026-11-06
