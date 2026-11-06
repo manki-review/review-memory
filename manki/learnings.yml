@@ -264,3 +264,12 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793977823435
+  content: 'User context on "src/review-record.ts": Fixed in cdabbd2.
+    `extractReviewRecords` reads the hidden formats first and falls back to the
+    visible `＜details＞` block only when the body has no hidden record. A test
+    quotes a visible block next to a real hidden record and reads the hidden
+    one.'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
