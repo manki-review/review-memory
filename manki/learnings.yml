@@ -644,3 +644,14 @@
   scope: repo
   source: manki-review/manki#1060
   created_at: 2026-11-06
+- id: learn-1793982379090
+  content: 'User context on "src/review.ts": Fixed in 3ab5518. The Claude client
+    throws `TurnLimitError` when the run ends with `error_max_turns`, and
+    `runReviewerAgent` then sends the same review once more without `repoTools`,
+    so the finder still reviews the diff and the round completes. The e2e test
+    makes the first tool call run out of turns and checks the second reviewer
+    call has no tools and the round approves. Per-class budgets and a wrap-up
+    before the limit come with #1021.'
+  scope: repo
+  source: manki-review/manki#1059
+  created_at: 2026-11-06
