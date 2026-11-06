@@ -62,3 +62,10 @@
   scope: repo
   source: manki-review/manki#1042
   created_at: 2026-11-06
+- id: learn-1793975754560
+  content: 'User context on "src/utils.test.ts": Fixed in 4469537. Each offset now
+    asserts the exact redacted header, so a wrong slice in `base64Forms` fails
+    the test.'
+  scope: repo
+  source: manki-review/manki#1042
+  created_at: 2026-11-06
