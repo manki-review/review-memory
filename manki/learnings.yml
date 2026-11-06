@@ -1043,3 +1043,11 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794003665501
+  content: 'User context on "src/index.ts": Fixed in 14ac699. The draft gate now
+    checks `forced`, so Full review and Force review review a draft under
+    `drafts: skip` too, as Review this draft does. The mode test includes a Full
+    review tick on a draft.'
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
