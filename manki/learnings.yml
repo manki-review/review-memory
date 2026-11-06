@@ -1051,3 +1051,15 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794003732167
+  content: "User context on \"src/index.ts\": Not changing this one. The settings
+    block exists only when the token service sends `settings`, and only a
+    dispatched run asks for them. The coordinator runs one state-lane item per
+    PR at a time: it dispatches a push or box run only after the previous run on
+    that lane reports its end, and queues the rest. So a push on a paused or
+    draft PR can't run while another review of the same PR is running, and the
+    block it updates is never a live run's. In event-driven mode there are no
+    settings, so this pa"
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
