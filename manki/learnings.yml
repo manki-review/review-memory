@@ -718,3 +718,11 @@
   scope: repo
   source: manki-review/manki#1060
   created_at: 2026-11-06
+- id: learn-1793983014401
+  content: 'User context on "src/index.ts": Fixed in ff3173f. The draft check
+    reads the base config in `reviewsDrafts`, which catches a config error, logs
+    a warning naming it, and skips the draft as with `drafts: skip`. A test
+    covers an unreadable config.'
+  scope: repo
+  source: manki-review/manki#1061
+  created_at: 2026-11-06
