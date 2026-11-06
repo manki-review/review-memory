@@ -29,3 +29,11 @@
   scope: repo
   source: manki-review/manki#1039
   created_at: 2026-11-06
+- id: learn-1793975530938
+  content: 'User context on "src/github.ts": Fixed in 4612593. A 404 is still
+    treated as a missing file. Any other read error is logged with
+    `core.warning` naming the path, and the test for failed fetches checks that
+    warning.'
+  scope: repo
+  source: manki-review/manki#1039
+  created_at: 2026-11-06
