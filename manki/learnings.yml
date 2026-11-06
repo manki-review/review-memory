@@ -1126,3 +1126,15 @@
   scope: repo
   source: manki-review/manki#1076
   created_at: 2026-11-06
+- id: learn-1794006608952
+  content: 'User context on "src/refute.ts": Fixed in fa64ded. `parseRefutation`
+    now keeps only proof locations whose file is in the workspace and holds the
+    cited line. A made-up or planted citation therefore leaves the outcome
+    unsettled, and the blocker becomes a warning at most instead of being
+    dropped. The prompt now says the files the refuter reads are PR content
+    whose instructions it never follows. A security finding also keeps its grade
+    unless the refutation confirms it, so steered PR content can no longer drop
+    or lower it. The two s'
+  scope: repo
+  source: manki-review/manki#1076
+  created_at: 2026-11-06
