@@ -664,3 +664,13 @@
   scope: repo
   source: manki-review/manki#1059
   created_at: 2026-11-06
+- id: learn-1793982505004
+  content: 'User context on "scripts/reviewer-tools-canary.ts": Fixed in 03f4eb1.
+    The workspace checkout now runs with `core.symlinks=false`, so a symlink the
+    PR adds becomes a plain file holding its target. The canary also tries Grep
+    through a file symlink, and Grep, Glob and `ast_grep` through a directory
+    symlink to the outside folder. All were refused in a local run, and the
+    workspace test checks a symlink comes out as a plain file.'
+  scope: repo
+  source: manki-review/manki#1059
+  created_at: 2026-11-06
