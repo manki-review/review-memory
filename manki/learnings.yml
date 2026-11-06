@@ -906,3 +906,13 @@
   scope: repo
   source: manki-review/manki#1068
   created_at: 2026-11-06
+- id: learn-1794001554068
+  content: 'User context on "src/related-repos.ts": Fixed in b8a7b83. The lock is
+    now a file holding the holder PID, created with `wx`. A waiter checks on
+    each poll whether that process still runs, and when it does not, records
+    `.failed` with the reason and stops at once instead of waiting out the
+    limit. A waiter that times out records `.failed` too, and the round warns
+    about any lock left without an outcome.'
+  scope: repo
+  source: manki-review/manki#1068
+  created_at: 2026-11-06
