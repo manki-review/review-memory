@@ -499,3 +499,11 @@
   scope: repo
   source: manki-review/manki#1056
   created_at: 2026-11-06
+- id: learn-1793980994991
+  content: 'User context on "src/providers/instrumentation.ts": Fixed in 28b71c1.
+    A call with neither input nor output tokens now gets `costUsd: null` and
+    counts in `unpricedCalls`, whatever path produced the zeros. The
+    `recordCalls` test covers an all-zero usage.'
+  scope: repo
+  source: manki-review/manki#1056
+  created_at: 2026-11-06
