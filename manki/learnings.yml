@@ -200,3 +200,13 @@
   scope: repo
   source: manki-review/manki#1046
   created_at: 2026-11-06
+- id: learn-1793977095049
+  content: 'User context on "src/static-signals.ts": Fixed in 995df02.
+    `readCiSetup` now ignores check runs whose app is `github-actions`, so a job
+    the PR adds cannot turn a tool off. GitHub Actions counts only through the
+    base branch workflows. The doc comment and `SETUP.md` say so, and the skip
+    test adds a `shellcheck` check run from `github-actions` that does not skip
+    shellcheck.'
+  scope: repo
+  source: manki-review/manki#1043
+  created_at: 2026-11-06
