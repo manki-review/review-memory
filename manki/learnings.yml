@@ -1108,3 +1108,9 @@
   scope: repo
   source: manki-review/manki#1076
   created_at: 2026-11-06
+- id: learn-1794005736076
+  content: 'User context on "src/refute.ts": Fixed in 2e103ba: the refutation
+    calls now go through `mapWithConcurrency` with at most three at a time.'
+  scope: repo
+  source: manki-review/manki#1076
+  created_at: 2026-11-06
