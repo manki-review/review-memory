@@ -710,3 +710,11 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793982981705
+  content: "User context on \"src/config.ts\": Fixed in 1b58416. A label rule now
+    matches only a head branch in the repo itself, like the branch rule, so a
+    fork's later pushes are reviewed whatever labels the PR carries. `SETUP.md`
+    and `.manki.yml.example` say so, and a test covers a labelled fork PR."
+  scope: repo
+  source: manki-review/manki#1060
+  created_at: 2026-11-06
