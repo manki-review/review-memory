@@ -395,3 +395,11 @@
   scope: repo
   source: manki-review/manki#1052
   created_at: 2026-11-06
+- id: learn-1793979645097
+  content: 'User context on "src/related-repos.ts": Fixed in 2e96a23: every
+    removal now goes through `removeQuietly`, which retries and warns instead of
+    throwing, so one repo that git still holds open is skipped without failing
+    the load.'
+  scope: repo
+  source: manki-review/manki#1052
+  created_at: 2026-11-06
