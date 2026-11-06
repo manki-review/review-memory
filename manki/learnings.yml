@@ -635,3 +635,12 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793982206112
+  content: "User context on \"src/index.ts\": Fixed in 9db71c2. An author rule now
+    skips an event only when its sender is a listed author too. On `synchronize`
+    the sender is whoever pushed, so a writer's push to a Dependabot PR is
+    reviewed, while Dependabot's own pushes are still skipped. `SETUP.md` states
+    this, and `config.test.ts` covers a bot sender and a human sender."
+  scope: repo
+  source: manki-review/manki#1060
+  created_at: 2026-11-06
