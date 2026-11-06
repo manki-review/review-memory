@@ -807,3 +807,13 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984139805
+  content: "User context on \"src/utils.ts\": Fixed in f3736ac.
+    `mapWithConcurrency` sets a shared `failed` flag when a call rejects, so no
+    worker starts another slice, and the first rejection is thrown. The findings
+    of finished slices are dropped, as for any finder that fails, and the
+    finder's retry reads the whole diff again. A test checks that no call starts
+    after the failure."
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
