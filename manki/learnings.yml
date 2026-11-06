@@ -771,3 +771,13 @@
   scope: repo
   source: manki-review/manki#1061
   created_at: 2026-11-06
+- id: learn-1793983627529
+  content: 'User context on "src/index.ts": Fixed in f673db4. Both size gates now
+    post no review. A PR over a limit gets a comment in place of the progress
+    comment (with a Force review box below the hard limit) and an
+    action-required check, and earlier reviews are not dismissed. A push that
+    makes a PR too big leaves a REQUEST_CHANGES in place. The tests check that
+    `postReview` and `dismissPreviousReviews` are not called.'
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
