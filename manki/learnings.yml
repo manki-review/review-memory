@@ -586,3 +586,11 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793981555652
+  content: 'User context on "scripts/calibration.ts": Fixed in cb37297. `main`
+    counts the pull requests it skips. When any was skipped, it prints how many,
+    exits 1 and does not write the export, so a committed set is never replaced
+    by a partial one.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
