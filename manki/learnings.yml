@@ -604,3 +604,15 @@
   scope: repo
   source: manki-review/manki#1057
   created_at: 2026-11-06
+- id: learn-1793981933784
+  content: "User context on \"src/config.ts\": Fixed in 48c233c. A branch rule now
+    matches only a head branch in the repo itself (`fromFork` is false), so a
+    fork's author can no longer pick a matching name. Only someone with write
+    access can push a branch to the repo. The docs now say which rules only
+    trusted actors can meet: the author, set by GitHub, is the safest, a label
+    needs triage access, and a branch rule is limited to the repo's own
+    branches. A test covers a fork branch that matches the pattern and is not
+    skipped."
+  scope: repo
+  source: manki-review/manki#1060
+  created_at: 2026-11-06
