@@ -142,3 +142,12 @@
   scope: repo
   source: manki-review/manki#1042
   created_at: 2026-11-06
+- id: learn-1793976397189
+  content: 'User context on "src/index.ts": Fixed in 3108119:
+    `checkAndAutoApprove` now tags its approval with `AUTO_APPROVE_MARKER`, and
+    `fetchPriorRoundContexts` matches that marker instead of the first line. A
+    reposted standing verdict, including one from a `BUDGET` round, no longer
+    resets the count. The `fetchRecapState` test covers the reposted verdict.'
+  scope: repo
+  source: manki-review/manki#1045
+  created_at: 2026-11-06
