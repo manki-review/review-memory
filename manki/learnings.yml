@@ -480,3 +480,12 @@
   scope: repo
   source: manki-review/manki#1056
   created_at: 2026-11-06
+- id: learn-1793980872557
+  content: "User context on \"src/providers/instrumentation.ts\": Fixed in
+    4d7197d. The Codex and Gemini CLI paths no longer report zero usage: they
+    leave `usage` out, since they can't measure it. `recordCalls` sets `costUsd:
+    null` when a response has no usage, so these calls count in `unpricedCalls`
+    instead of adding $0. Tests cover both."
+  scope: repo
+  source: manki-review/manki#1056
+  created_at: 2026-11-06
