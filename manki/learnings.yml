@@ -531,3 +531,14 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793981076996
+  content: 'User context on "src/diff.ts": Fixed in 392840c. Removals now count as
+    changes in `changedSincePrior` in `src/diff.ts`. A base line the PR removes
+    that it did not remove at the last round counts at the spot where it now
+    sits. A line the PR added before and no longer has is located through the
+    diff between the two commits, matched by text against the earlier added
+    lines, so rebase noise does not count. A new test in `diff.test.ts` covers
+    both shapes.'
+  scope: repo
+  source: manki-review/manki#1057
+  created_at: 2026-11-06
