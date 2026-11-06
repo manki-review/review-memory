@@ -655,3 +655,12 @@
   scope: repo
   source: manki-review/manki#1059
   created_at: 2026-11-06
+- id: learn-1793982439331
+  content: 'User context on ".github/workflows/reviewer-tools-canary.yml": Kept as
+    is. The repo pins first-party `actions/*` actions by major tag and marks
+    them `# first-party GitHub action`, as in `.github/workflows/ci.yml`. This
+    workflow follows that convention, so pinning only these two to a hash would
+    make it the odd one out.'
+  scope: repo
+  source: manki-review/manki#1059
+  created_at: 2026-11-06
