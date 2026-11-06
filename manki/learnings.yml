@@ -1063,3 +1063,12 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794004890328
+  content: 'User context on "src/setup-docs.test.ts": Fixed in 6b097c9. The
+    heading parser now drops fenced blocks before it strips backticks, so a `#`
+    comment line in a code block no longer counts as a heading. I checked it
+    with a temporary link to `#global-review-conventions`, which now fails the
+    test.'
+  scope: repo
+  source: manki-review/manki#1075
+  created_at: 2026-11-06
