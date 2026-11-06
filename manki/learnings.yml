@@ -110,3 +110,25 @@
   scope: repo
   source: manki-review/manki#1042
   created_at: 2026-11-06
+- id: learn-1793976311674
+  content: >-
+    User context on "src/static-signals.ts": zizmor 1.32.0 anchors
+    `dangerous-triggers` on the trigger key itself, not on `on:`. With the
+    pinned binary on a workflow that has `pull_request_target:` under an
+    existing `on:` (line 2) and `push:` (line 3):
+
+
+    ```
+
+    dangerous-triggers  primary start line 4, end line 4, feature
+    'pull_request_target'
+
+    ```
+
+
+    The `on:` line is only a `Hidden` location, which the parser never reads. So
+    adding `pull_request_target:` under an existing `on:` keeps the result,
+    because line 4 is the added line. The same holds 
+  scope: repo
+  source: manki-review/manki#1043
+  created_at: 2026-11-06
