@@ -317,3 +317,11 @@
   scope: repo
   source: manki-review/manki#1053
   created_at: 2026-11-06
+- id: learn-1793978288087
+  content: 'User context on "src/memory.ts": Fixed in 1d85167. Callers now pass
+    the full text, and `writeFile` redacts the message before it shortens it to
+    72 characters. The test uses a token that straddles the old 50-character cut
+    and checks the message holds no part of it.'
+  scope: repo
+  source: manki-review/manki#1053
+  created_at: 2026-11-06
