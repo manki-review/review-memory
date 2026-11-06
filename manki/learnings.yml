@@ -293,3 +293,10 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793978049141
+  content: 'User context on "src/review-record.ts": Fixed in cdabbd2. `gunzipSync`
+    runs with `maxOutputLength` set to 16 MiB. A larger record is reported as an
+    error and skipped, and a test covers it.'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
