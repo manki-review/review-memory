@@ -53,3 +53,12 @@
   scope: repo
   source: manki-review/manki#1041
   created_at: 2026-11-06
+- id: learn-1793975698762
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 016bff8. Every
+    string of the auth file is now registered: when it is seeded or already
+    present, and again after each Codex and Gemini run, so `id_token` and tokens
+    refreshed during a run are redacted too. Tests cover `id_token`, a file that
+    already exists, and a token rewritten after seeding.'
+  scope: repo
+  source: manki-review/manki#1042
+  created_at: 2026-11-06
