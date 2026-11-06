@@ -442,3 +442,14 @@
   scope: repo
   source: manki-review/manki#1052
   created_at: 2026-11-06
+- id: learn-1793980106590
+  content: 'User context on "src/config.ts": Fixed in f5ca12a: the error now says
+    to use the full hash, or `refs/tags/＜name＞` or `refs/heads/＜name＞` for a tag
+    or branch of that name. Those forms pass validation, and `git fetch`
+    resolves them. `SETUP.md` shows the `refs/tags/20240115` form, and the
+    config test accepts it. I kept the rule itself, because an abbreviated hash
+    fails at fetch time on every run, and the full ref form is always available
+    for a hex-named branch or tag.'
+  scope: repo
+  source: manki-review/manki#1052
+  created_at: 2026-11-06
