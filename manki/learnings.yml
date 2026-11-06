@@ -465,3 +465,10 @@
   scope: repo
   source: manki-review/manki#1052
   created_at: 2026-11-06
+- id: learn-1793980663133
+  content: 'User context on "src/related-repos.ts": Fixed in 9798339: the stash is
+    now `＜dir＞@objects`. `@` cannot occur in a repo name, so it never collides
+    with another repo directory.'
+  scope: repo
+  source: manki-review/manki#1052
+  created_at: 2026-11-06
