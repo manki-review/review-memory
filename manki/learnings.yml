@@ -870,3 +870,12 @@
   scope: repo
   source: manki-review/manki#1064
   created_at: 2026-11-06
+- id: learn-1793999910292
+  content: 'User context on "src/mcp-server.ts": Fixed in e294b1f: `grep` and
+    `glob` now compile the glob once per call with `Minimatch`, and refuse a
+    glob over 200 characters, nested braces, a brace range such as `{1..99999}`,
+    and braces that expand into more than 100 patterns. `src/mcp-server.test.ts`
+    covers each refusal and a normal `**/*.{ts,rs}` glob.'
+  scope: repo
+  source: manki-review/manki#1066
+  created_at: 2026-11-06
