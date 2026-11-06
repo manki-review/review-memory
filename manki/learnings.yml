@@ -694,3 +694,10 @@
   scope: repo
   source: manki-review/manki#1059
   created_at: 2026-11-06
+- id: learn-1793982582658
+  content: 'User context on "scripts/calibration.ts": Fixed in fd06734. The cap
+    note line under the header is stripped too, and the regenerated set has none
+    left.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
