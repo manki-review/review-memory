@@ -210,3 +210,11 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793977145980
+  content: 'User context on "src/static-signals.ts": Fixed in 995df02 with the
+    suggested change: a shebang decides, and the extension only counts for a
+    file without one. The test adds `scripts/setup.sh` with a zsh shebang, which
+    shellcheck does not get.'
+  scope: repo
+  source: manki-review/manki#1043
+  created_at: 2026-11-06
