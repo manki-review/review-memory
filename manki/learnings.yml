@@ -969,3 +969,13 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794002298453
+  content: 'User context on "src/judge.ts": Fixed in 80f2517: `mergeEvidence` now
+    lets only the kept finding decide whether it claims something is missing. A
+    duplicate can back that claim with its empty search, but never adds a claim
+    the kept finding did not make. `src/judge.test.ts` covers a proven blocker
+    with an unbacked duplicate, a claim backed by the duplicate, and a kept
+    finding with no evidence of its own.'
+  scope: repo
+  source: manki-review/manki#1070
+  created_at: 2026-11-06
