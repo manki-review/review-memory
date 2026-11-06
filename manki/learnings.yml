@@ -516,3 +516,10 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793981012453
+  content: 'User context on "src/round-context.ts": Fixed in 392840c.
+    `priorChange` is no longer on `RoundRecordInput` or the `ReviewRun` literal.
+    `tagFindingOrigins` takes the local value.'
+  scope: repo
+  source: manki-review/manki#1057
+  created_at: 2026-11-06
