@@ -616,3 +616,13 @@
   scope: repo
   source: manki-review/manki#1060
   created_at: 2026-11-06
+- id: learn-1793981974403
+  content: "User context on \"src/diff.ts\": Fixed in b8029d9. A line that the
+    diff between the two commits adds now counts as moved only when the current
+    change adds that same text at the same line (`added.get(line) === text`). A
+    base line that a rebase brings in sits on a context line of the PR's change,
+    so it never counts, even when its text is a common one like `}`. A new case
+    in `diff.test.ts` covers that, and the moved `guard` case still tags `new`."
+  scope: repo
+  source: manki-review/manki#1057
+  created_at: 2026-11-06
