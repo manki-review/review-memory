@@ -180,3 +180,15 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793976742867
+  content: 'User context on "src/static-signals.ts": 94002aa makes this checkable
+    in the PR. `src/static-signals.fixtures/zizmor.json` now holds the real
+    zizmor 1.32.0 `dangerous-triggers` result, with the `Primary` location on
+    the `pull_request_target` line and `on:` only as a `Hidden` location. The
+    test in `src/static-signals.test.ts` adds `pull_request_target:` under an
+    existing `on:` and expects the result on that added line. `runZizmor` in
+    `src/binary-analyzers.ts` reads only the location whose `symbolic.kind` is
+    `Primary`.'
+  scope: repo
+  source: manki-review/manki#1043
+  created_at: 2026-11-06
