@@ -431,3 +431,14 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793980054649
+  content: 'User context on "src/related-repos.ts": Fixed in b8baf03: a restored
+    object store is reused only when `isPlainTree` finds nothing but regular
+    files and real directories in it, at any depth. A symlink anywhere in
+    `objects`, such as `objects/pack` or `objects/ab`, means the store is
+    dropped and the repo starts empty. The symlink test now also covers a linked
+    `objects/pack`, and checks that the linked directory outside the cache is
+    left alone.'
+  scope: repo
+  source: manki-review/manki#1052
+  created_at: 2026-11-06
