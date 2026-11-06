@@ -102,3 +102,11 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793976204711
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 1c366b8. The
+    read and parse are in a `try/catch` that logs a `core.warning`, so the CLI
+    result or its own error survives. The test checks that a directory path does
+    not throw.'
+  scope: repo
+  source: manki-review/manki#1042
+  created_at: 2026-11-06
