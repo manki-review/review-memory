@@ -218,3 +218,15 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793977183214
+  content: 'User context on "src/github.ts": Fixed in aa70c3a. A record that still
+    exceeds `MAX_RECORD_CHARS` after compression no longer fails the review. The
+    review carries it without the bulky diagnostics (`omitBulkyDiagnostics`
+    drops per-file stats, excluded and binary files, raw finder findings, judge
+    drops, dedup and static matches, and reclassified priors), marks it
+    `meta.diagnosticsOmitted`, logs a warning with the size and writes the full
+    record to the log. Findings, thread evaluations and the verdict stay, so
+    later rounds still l'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
