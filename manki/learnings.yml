@@ -421,3 +421,13 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793979861054
+  content: 'User context on "src/review-record.ts": Fixed in ea537fc.
+    `extractReviewRecords` reads only the last hidden record by position, plain
+    or compressed, since Manki always writes it at the end of the body. A quoted
+    record earlier in the text is ignored, and a broken last record is reported
+    as an error. The visible `＜details＞` fallback is unchanged. Tests cover a
+    forged record quoted before the real one.'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
