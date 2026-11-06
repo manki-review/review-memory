@@ -412,3 +412,12 @@
   scope: repo
   source: manki-review/manki#1052
   created_at: 2026-11-06
+- id: learn-1793979806266
+  content: 'User context on "src/review-record.ts": Fixed in ea537fc. The record
+    goes through `redactSecretsDeep` before `JSON.stringify`, and
+    `sanitizeTokens` still runs on the text, whose token characters JSON never
+    escapes. The test now registers a secret holding a quote and a backslash and
+    checks it is redacted from a compressed record.'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
