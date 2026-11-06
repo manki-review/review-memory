@@ -367,3 +367,11 @@
   scope: repo
   source: manki-review/manki#1046
   created_at: 2026-11-06
+- id: learn-1793978626549
+  content: 'User context on "src/memory.ts": Fixed in be27f2b. `appendMemoryLine`
+    now takes the entry and runs `redactSecretsDeep` before `JSON.stringify`,
+    and `recordFixRate` passes its record. The test registers a secret with a
+    quote and a backslash and checks that the parsed line holds `[REDACTED]`.'
+  scope: repo
+  source: manki-review/manki#1053
+  created_at: 2026-11-06
