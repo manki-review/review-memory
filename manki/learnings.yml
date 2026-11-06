@@ -761,3 +761,13 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793983392055
+  content: 'User context on "src/github.ts": Fixed in ed55cde. `postReview` takes
+    the event-time `draft` again, and `fetchApprovalHold` treats the PR as a
+    draft when the lookup fails and the event said draft. When the PR can be
+    read, the live state still decides, so a PR marked ready during a draft
+    round is still approved. A test covers the failed lookup for a draft and for
+    a ready PR.'
+  scope: repo
+  source: manki-review/manki#1061
+  created_at: 2026-11-06
