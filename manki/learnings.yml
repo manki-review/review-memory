@@ -897,3 +897,12 @@
   scope: repo
   source: manki-review/manki#1068
   created_at: 2026-11-06
+- id: learn-1794001486162
+  content: 'User context on "src/related-repos.ts": Fixed in b8a7b83, together
+    with the blocker above: the fetch is limited to 60s and the wait to 62s. A
+    waiter that times out now writes a `.failed` marker, and
+    `warnRelatedRepoFailures` also warns about a lock that never got an
+    outcome.'
+  scope: repo
+  source: manki-review/manki#1068
+  created_at: 2026-11-06
