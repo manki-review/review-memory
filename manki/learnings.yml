@@ -738,3 +738,15 @@
   scope: repo
   source: manki-review/manki#1061
   created_at: 2026-11-06
+- id: learn-1793983092310
+  content: 'User context on "src/github.ts": Documented in bab88f7. The record is
+    part of the review body it describes, so it has to be written before GitHub
+    accepts the line comments or refuses a file-level comment. Measuring the
+    final state would need a second edit of every review. The `output` doc in
+    `src/types.ts` and `SETUP.md` now say these are the lengths as composed, and
+    that a refused comment, or the body rewritten to carry it, is not reflected.
+    That is enough to compare output length across rounds, which is what the
+    field is for.'
+  scope: repo
+  source: manki-review/manki#1063
+  created_at: 2026-11-06
