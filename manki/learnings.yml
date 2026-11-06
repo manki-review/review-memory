@@ -800,3 +800,10 @@
   scope: repo
   source: manki-review/manki#1061
   created_at: 2026-11-06
+- id: learn-1793984085929
+  content: "User context on \"src/index.ts\": Fixed in f3736ac, together with the
+    blocker above: on both too-big paths Manki's earlier approvals are dismissed
+    and a request for changes stays."
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
