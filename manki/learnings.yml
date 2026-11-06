@@ -940,3 +940,15 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794001613893
+  content: 'User context on "src/judge.ts": Keeping this as is. The cap exists
+    because the judge cannot see code outside the diff and the provided context.
+    For related repos the reviewer did read the code, and the judge has no way
+    to read it itself. Without the lift, every consumer break drops to
+    `suggestion` and the agreed rule (a `warning` with call sites) cannot hold.
+    The abuse case is limited. A planted citation can only raise a grade, and a
+    PR author gains nothing by blocking their own PR. A consumer break reaches
+    `blocker` only when'
+  scope: repo
+  source: manki-review/manki#1068
+  created_at: 2026-11-06
