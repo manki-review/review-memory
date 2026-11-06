@@ -45,3 +45,11 @@
   scope: repo
   source: manki-review/manki#1039
   created_at: 2026-11-06
+- id: learn-1793975668584
+  content: 'User context on "src/github.ts": Fixed in e4d04fb:
+    `formatOpenBlockers` now lists a thread without a severity marker, matching
+    how `fetchBotReviewThreads` treats it as blocking. The pause notice test
+    covers it.'
+  scope: repo
+  source: manki-review/manki#1041
+  created_at: 2026-11-06
