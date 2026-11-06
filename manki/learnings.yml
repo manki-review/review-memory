@@ -1100,3 +1100,11 @@
   scope: repo
   source: manki-review/manki#1076
   created_at: 2026-11-06
+- id: learn-1794005672273
+  content: 'User context on "src/refute.ts": Fixed in 2e103ba: `refuteBlockers`
+    now skips any finding graded `ignore`, so a lead that the judge or a
+    suppression dropped is never checked or brought back as a blocker.
+    `src/refute.test.ts` covers a dropped lead.'
+  scope: repo
+  source: manki-review/manki#1076
+  created_at: 2026-11-06
