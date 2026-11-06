@@ -523,3 +523,11 @@
   scope: repo
   source: manki-review/manki#1057
   created_at: 2026-11-06
+- id: learn-1793981070635
+  content: 'User context on "scripts/calibration.ts": Fixed in 3c39348. A reply
+    that only agrees now falls through to the judge-addressed and line-changed
+    checks. The test adds "Good catch, agreed." with no change, which stays
+    unclear.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
