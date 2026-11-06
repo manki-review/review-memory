@@ -568,3 +568,13 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793981205818
+  content: "User context on \"src/diff.ts\": Fixed in abf7e23. `changedSincePrior`
+    now walks the files of the diff between the two commits as well as the
+    current change. It counts a line that diff adds whose text the PR removed at
+    the last round, so restored code next to a finding tags it `new`, also when
+    the file dropped out of the PR's change. `diff.test.ts` covers a restored
+    `if (!user) return;`."
+  scope: repo
+  source: manki-review/manki#1057
+  created_at: 2026-11-06
