@@ -781,3 +781,13 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793983703386
+  content: "User context on \"src/index.ts\": Fixed in f3736ac. `postTooBigNotice`
+    now dismisses Manki's earlier approvals through `dismissPreviousReviews`,
+    which takes the review state to dismiss, here `APPROVED`. A request for
+    changes stays, so new unread code no longer rides on an old approval and a
+    blocker cannot be cleared by growing the PR. The test checks that only
+    approvals are dismissed."
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
