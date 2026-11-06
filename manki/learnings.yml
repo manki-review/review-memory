@@ -489,3 +489,13 @@
   scope: repo
   source: manki-review/manki#1056
   created_at: 2026-11-06
+- id: learn-1793980937663
+  content: "User context on \"src/review.ts\": Fixed in 4d7197d. `withFallback`
+    now records the stage client and the fallback client separately, inside
+    `withRefusalFallback`. The refused primary request is recorded as a failed
+    call with the refusal as its error, and the fallback's call is marked
+    `fallback: true` through its label. The test covers a refusal followed by a
+    fallback answer."
+  scope: repo
+  source: manki-review/manki#1056
+  created_at: 2026-11-06
