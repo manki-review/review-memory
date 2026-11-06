@@ -832,3 +832,11 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984664255
+  content: "User context on \"src/review.ts\": Fixed in 8a67cbd. A sliced finder's
+    `latencyMs` is now the elapsed time of the whole `mapWithConcurrency` call,
+    so later waves count. The test uses real delays and checks the elapsed
+    time."
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
