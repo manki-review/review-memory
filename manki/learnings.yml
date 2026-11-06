@@ -701,3 +701,12 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793982916123
+  content: 'User context on "scripts/calibration.ts": Fixed the comment part in
+    fd06734: the cap note is gone. `judgeNotes` stays in the set on purpose,
+    next to `severity`: both are what a replay compares the new grade against.
+    The set README now says both name the old grade and must not be shown to a
+    replayed judge.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
