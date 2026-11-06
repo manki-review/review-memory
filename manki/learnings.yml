@@ -247,3 +247,9 @@
   scope: repo
   source: manki-review/manki#1046
   created_at: 2026-11-06
+- id: learn-1793977514683
+  content: 'User context on "src/github.ts": After rebasing onto main, the fix is
+    263b9df (it was aa70c3a).'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
