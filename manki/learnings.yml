@@ -307,3 +307,13 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793978242250
+  content: "User context on \"src/memory.ts\": Fixed in 1d85167. `updateYamlList`
+    redacts each string of the list before `stringifyYaml`, so the serializer
+    quotes `'[REDACTED]'` and escaped secrets are matched in their plain form.
+    `appendMemoryLine` redacts its JSON line, where the replacement stays a
+    valid string. The test reads the written YAML back and parses the JSON
+    line."
+  scope: repo
+  source: manki-review/manki#1053
+  created_at: 2026-11-06
