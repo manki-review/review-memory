@@ -686,3 +686,11 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793982572776
+  content: 'User context on ".github/workflows/reviewer-tools-canary.yml": Fixed
+    in 03f4eb1. The step stores the version, fails with an error naming
+    `src/providers/anthropic.ts` when it is empty, and only then installs that
+    version.'
+  scope: repo
+  source: manki-review/manki#1059
+  created_at: 2026-11-06
