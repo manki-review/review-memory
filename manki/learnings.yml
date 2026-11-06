@@ -375,3 +375,11 @@
   scope: repo
   source: manki-review/manki#1053
   created_at: 2026-11-06
+- id: learn-1793979533142
+  content: 'User context on "src/workspace.test.ts": Fixed in 9ab9203. A new test
+    points the fetch at a local HTTP server that records the `Authorization`
+    header of every request, and checks that each one is `basic` with the base64
+    of `x-access-token:＜token＞`.'
+  scope: repo
+  source: manki-review/manki#1054
+  created_at: 2026-11-06
