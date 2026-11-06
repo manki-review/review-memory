@@ -69,3 +69,11 @@
   scope: repo
   source: manki-review/manki#1042
   created_at: 2026-11-06
+- id: learn-1793976142215
+  content: 'User context on "src/utils.ts": Fixed in 622da51. Lines like
+    `-----BEGIN RSA PRIVATE KEY-----` are no longer redaction targets, and the
+    test checks that the armor line is posted unchanged while a key line is
+    still redacted.'
+  scope: repo
+  source: manki-review/manki#1042
+  created_at: 2026-11-06
