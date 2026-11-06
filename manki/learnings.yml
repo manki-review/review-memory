@@ -1035,3 +1035,11 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794003598798
+  content: 'User context on "src/index.ts": Fixed in 14ac699, both paths.
+    `retireSettingsBlocks` and the move-back in `dropProgressComment` go through
+    `setSettingsBlock`, which reads the comment just before it writes. The tests
+    cover a comment that changed after the list was read.'
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
