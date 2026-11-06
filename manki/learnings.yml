@@ -979,3 +979,15 @@
   scope: repo
   source: manki-review/manki#1070
   created_at: 2026-11-06
+- id: learn-1794002824094
+  content: 'User context on "src/judge.ts": Fixed in 5696474. `runReview` now
+    offers `related` only when there is a workspace, `related_repos` is set and
+    at least one finder client has repository tools. The same list goes to the
+    judge as `JudgeInput.relatedRepos`, and `buildJudgeSystemPrompt` adds the
+    related repo rules only from that list, never from the config.
+    `review.test.ts` covers a round with tools, without a workspace, without the
+    config and with a client that has no tools. Only the first gives the judge
+    the rules.'
+  scope: repo
+  source: manki-review/manki#1068
+  created_at: 2026-11-06
