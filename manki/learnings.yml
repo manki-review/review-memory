@@ -726,3 +726,15 @@
   scope: repo
   source: manki-review/manki#1061
   created_at: 2026-11-06
+- id: learn-1793983083713
+  content: 'User context on "src/github.ts": Fixed in ff3173f. `postReview` no
+    longer takes `draft` from the event. `fetchApprovalHold` replaces
+    `fetchConflictingBase` and reads the live PR when Manki would approve. A
+    draft holds the approval, otherwise a conflict does. So a PR marked ready
+    during a draft round is approved, and one converted to a draft is not.
+    `holdApproval` (formerly `holdApprovalOnConflict`) uses the same lookup, so
+    an approval that stands after a push is held on a draft too. The round still
+    records `meta.draft` from the'
+  scope: repo
+  source: manki-review/manki#1061
+  created_at: 2026-11-06
