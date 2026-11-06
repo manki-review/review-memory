@@ -626,3 +626,12 @@
   scope: repo
   source: manki-review/manki#1057
   created_at: 2026-11-06
+- id: learn-1793982180479
+  content: 'User context on "scripts/calibration.ts": Fixed in ac8383a. The
+    exported `comment` drops the severity header line and the `AI context`
+    block, and the rust-dashcore set is regenerated without them. `severity`
+    stays a separate field, so a replay can compare grades without feeding the
+    old one to the judge.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
