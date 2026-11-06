@@ -300,3 +300,10 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793978114232
+  content: 'User context on "src/review-record.ts": Fixed in dd7774b. `PLAIN_RE`
+    matches with `[\s\S]`, and a test reads back a record holding U+2028 and
+    U+2029.'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
