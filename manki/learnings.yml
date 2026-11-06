@@ -1114,3 +1114,15 @@
   scope: repo
   source: manki-review/manki#1076
   created_at: 2026-11-06
+- id: learn-1794006090475
+  content: "User context on \"src/refute.ts\": Fixed in 9c866b7: `parseRefutation`
+    now counts any outcome without proving lines as unsettled, so a disproved
+    answer with no `proof` can no longer drop a blocker. It is posted as a
+    warning at most instead. The prompt says so too, and `src/refute.test.ts`
+    has a \"Disproved without proof\" case. The two smaller fixes from the
+    review body are in the same commit. A confirmed lead keeps the judge's
+    grade, and the cap is lifted only on a blocker that `capUnprovenBlocker`
+    tagged as unproven. Refutation c"
+  scope: repo
+  source: manki-review/manki#1076
+  created_at: 2026-11-06
