@@ -791,3 +791,12 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984023534
+  content: "User context on \"src/state.ts\": Fixed in d5453f9. `holdApproval`
+    takes `draftWhenUnread` and passes it to `fetchApprovalHold`, and the
+    unchanged-verdict path passes the event's draft state from `skipsRound`. A
+    failed PR read on a draft holds the standing approval instead of posting it
+    again. `state.test.ts` covers both outcomes of a failed read."
+  scope: repo
+  source: manki-review/manki#1061
+  created_at: 2026-11-06
