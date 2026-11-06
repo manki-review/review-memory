@@ -817,3 +817,10 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984201320
+  content: 'User context on "src/index.ts": Fixed in f3736ac. The
+    `postTooBigNotice` doc block now sits above its own function, and
+    `postPauseNotice` has its comment back.'
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
