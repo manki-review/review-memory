@@ -238,3 +238,12 @@
   scope: repo
   source: manki-review/manki#1051
   created_at: 2026-11-06
+- id: learn-1793977376409
+  content: 'User context on "src/static-signals.ts": Fixed in e2d78c0:
+    `usesRustRules` catches a rejected `Cargo.toml` read, logs a warning and
+    returns `false`, like the base config read in `collectStaticSignals`. The
+    Rust test covers a rejecting `fetchConfigFile` and expects the check results
+    without the Rust rules (test order settled in 9affbf3).'
+  scope: repo
+  source: manki-review/manki#1046
+  created_at: 2026-11-06
