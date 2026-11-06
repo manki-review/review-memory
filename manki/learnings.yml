@@ -9,3 +9,15 @@
   scope: repo
   source: manki-review/manki#1040
   created_at: 2026-11-06
+- id: learn-1793975141867
+  content: 'User context on "src/judge.ts": Keeping this as is. The effect only
+    reaches PRs that are open when v7 is installed, and only until their code at
+    the flagged spot changes. The judge cannot see which rubric graded a prior
+    round: the prior round findings it receives carry no version. Treating a
+    rubric change as new evidence would need that version passed through to the
+    judge, and it would also unanchor every grade on those PRs, which is the
+    flip-flop the stability rule prevents. Once the PRs open at the upgrade
+    merge, every grade'
+  scope: repo
+  source: manki-review/manki#1040
+  created_at: 2026-11-06
