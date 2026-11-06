@@ -77,3 +77,28 @@
   scope: repo
   source: manki-review/manki#1042
   created_at: 2026-11-06
+- id: learn-1793976202523
+  content: >-
+    User context on "src/binary-analyzers.ts": actionlint 1.7.12 prints `[]` for
+    a clean file with this exact format, so the parse never sees `null` or an
+    empty string. Checked with the pinned binary:
+
+
+    ```
+
+    $ printf 'on: push\njobs:\n  a:\n    runs-on:
+    ubuntu-latest\n    steps:\n      - run: echo hi\n' ＞ q.yml
+
+    $ actionlint -format '{{json .}}' -no-color -shellcheck= -pyflakes= ./q.yml;
+    echo " exit=$?"
+
+    []
+     exit=0
+    ```
+
+
+    If a later version printed something else, the analyzer would be skipped
+    with a warning and the review would go on, which is th
+  scope: repo
+  source: manki-review/manki#1043
+  created_at: 2026-11-06
