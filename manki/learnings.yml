@@ -858,3 +858,15 @@
   scope: repo
   source: manki-review/manki#1064
   created_at: 2026-11-06
+- id: learn-1793985304614
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 49ef18d. Every
+    string field of the credentials file is registered now, except a short list
+    of public ones (`type`, `client_email`, `client_id`, `project_id`,
+    `quota_project_id`, `audience`, `universe_domain`, `subject_token_type` and
+    the endpoint URLs). That covers a service account key, an `authorized_user`
+    refresh token and client secret, and the `external_account` request header.
+    The test checks the `external_account` header token is redacted and its URL
+    is not.'
+  scope: repo
+  source: manki-review/manki#1064
+  created_at: 2026-11-06
