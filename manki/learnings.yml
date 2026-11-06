@@ -916,3 +916,15 @@
   scope: repo
   source: manki-review/manki#1068
   created_at: 2026-11-06
+- id: learn-1794001555984
+  content: 'User context on "src/providers/anthropic.ts": This is intended. The
+    agreed design for #1021 replaces the retry without tools with the step
+    budget, so a finder answers with what it checked rather than starting over
+    on the diff alone. `--max-turns` is only a safety net now: the hook refuses
+    every call after the budget, and the model gets 5 more turns to answer. When
+    that net does trip, the finder is retried once by the existing loop in
+    `runReview` (`MAX_AGENT_RETRIES` is 1, see `src/review.ts:830`), and the
+    round is incomplete only if the ret'
+  scope: repo
+  source: manki-review/manki#1069
+  created_at: 2026-11-06
