@@ -887,3 +887,13 @@
   scope: repo
   source: manki-review/manki#1066
   created_at: 2026-11-06
+- id: learn-1794001421102
+  content: 'User context on "src/related-repos.ts": Fixed in b8a7b83. Confirmed:
+    the Claude stream is silent during a tool call and `anthropic.ts` does not
+    set `stderrResetsStale`. Codex is not affected: its MCP tool timeout
+    defaults to 300s and it resets the timer on stderr. The fetch limit is now
+    60s and a waiter gives up 2s after that, so a related repo tool call ends
+    well under the 90s stale limit. `SETUP.md` now says "within a minute".'
+  scope: repo
+  source: manki-review/manki#1068
+  created_at: 2026-11-06
