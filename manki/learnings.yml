@@ -750,3 +750,14 @@
   scope: repo
   source: manki-review/manki#1063
   created_at: 2026-11-06
+- id: learn-1793983265981
+  content: 'User context on "src/review.ts": Fixed in f673db4. A finder now reads
+    at most four slices at once through the new `mapWithConcurrency` helper in
+    `src/utils.ts`. `slice_lines` must be at least 200. The three size limits
+    now come from the base branch only, like the `review` block, with defaults
+    for a missing or invalid one. A PR can no longer lower `slice_lines` or
+    raise the limits for itself. Tests cover the helper, the minimum and the
+    base-only read.'
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
