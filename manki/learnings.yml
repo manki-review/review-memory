@@ -37,3 +37,11 @@
   scope: repo
   source: manki-review/manki#1039
   created_at: 2026-11-06
+- id: learn-1793975589371
+  content: 'User context on "src/github.ts": Fixed in 4612593. Files are now
+    fetched one at a time, nearest first, and fetching stops once the cap is
+    reached, so files the cap would discard are never requested. Failed reads
+    are logged as in the previous reply.'
+  scope: repo
+  source: manki-review/manki#1039
+  created_at: 2026-11-06
