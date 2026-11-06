@@ -507,3 +507,12 @@
   scope: repo
   source: manki-review/manki#1056
   created_at: 2026-11-06
+- id: learn-1793981012029
+  content: 'User context on "CONTRIBUTING.md": Fixed by rebasing onto main in
+    ab15fd5. #1049 has merged, so `package.json` now has `review-history` (`tsx
+    scripts/review-history.ts`), and its `{ repo, pr, record }` lines are what
+    `calibration` reads. `calibration` now imports the `HistoryLine` type and
+    `githubToken` from that script.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
