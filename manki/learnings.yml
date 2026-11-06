@@ -960,3 +960,12 @@
   scope: repo
   source: manki-review/manki#1067
   created_at: 2026-11-06
+- id: learn-1794001725906
+  content: 'User context on "src/index.ts": Fixed in 3219169. `postRunProgress`
+    remembers the comment that had the block. A run that deletes its progress
+    comment moves the block back to that comment with the new status. It posts a
+    status comment only when no comment had a block, so repeated pushes reuse
+    one comment. The test covers both cases.'
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
