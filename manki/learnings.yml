@@ -358,3 +358,12 @@
   scope: repo
   source: manki-review/manki#1051
   created_at: 2026-11-06
+- id: learn-1793978537398
+  content: 'User context on "src/static-signals.ts": Fixed in 2e8ee3a.
+    `rustRulePaths` returns the set of qualifying Rust files and `keep` checks
+    `rustPaths.has(path)`. The test changes `crates/net/src/lib.rs` under
+    `crates/Cargo.toml` together with `src/lib.rs`, which has no manifest above
+    it, and expects hints only for the first.'
+  scope: repo
+  source: manki-review/manki#1046
+  created_at: 2026-11-06
