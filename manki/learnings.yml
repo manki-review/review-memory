@@ -348,3 +348,13 @@
   scope: repo
   source: manki-review/manki#1046
   created_at: 2026-11-06
+- id: learn-1793978467868
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 4efeeee. The
+    Claude CLI also gets `DISABLE_*`, `CLAUDE_CONFIG_DIR`, `API_TIMEOUT_MS`,
+    `MAX_THINKING_TOKENS`, `MCP_TIMEOUT`, `MCP_TOOL_TIMEOUT`, and
+    `AWS_ROLE_ARN`, `AWS_ROLE_SESSION_NAME`, `AWS_WEB_IDENTITY_TOKEN_FILE` and
+    `AWS_CONTAINER_CREDENTIALS_*_URI`. SETUP.md lists them and the test covers
+    them.'
+  scope: repo
+  source: manki-review/manki#1051
+  created_at: 2026-11-06
