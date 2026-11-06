@@ -230,3 +230,11 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793977220187
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 1dd4f12.
+    Allowed names now match case-insensitively, so `Path` and `ComSpec` pass,
+    and `USERPROFILE`, `APPDATA`, `LOCALAPPDATA`, `PATHEXT` and `COMSPEC` are on
+    the list. A new test covers a Windows environment.'
+  scope: repo
+  source: manki-review/manki#1051
+  created_at: 2026-11-06
