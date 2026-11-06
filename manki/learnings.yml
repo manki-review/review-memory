@@ -674,3 +674,15 @@
   scope: repo
   source: manki-review/manki#1059
   created_at: 2026-11-06
+- id: learn-1793982524927
+  content: 'User context on "scripts/calibration.ts": Leaving this as is. GitHub
+    keeps a commit that a force-push left behind reachable by its SHA, so the
+    compare still works after a rebase, and none of the 13 rust-dashcore PRs
+    failed it. Rethrowing would turn one unreachable round commit into a
+    permanently refused export for that repository, even though every other
+    label is sound. The message names the commit and the PR, and only the
+    line-changed check for that round is lost: replies and judge-addressed
+    labels still apply.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
