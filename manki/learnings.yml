@@ -560,3 +560,11 @@
   scope: repo
   source: manki-review/manki#1057
   created_at: 2026-11-06
+- id: learn-1793981180920
+  content: 'User context on "scripts/calibration.ts": Fixed in 3c39348 with the
+    suggested change. `findThread` prefers the recorded `threadId` and only
+    matches a marker in a thread whose first comment is a bot comment. The test
+    adds a person quoting the marker and a recorded id.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
