@@ -253,3 +253,14 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793977538988
+  content: 'User context on "src/static-signals.ts": Fixed in 648168f.
+    `readCiSetup` now reads check runs on the base branch head commit (`ref:
+    baseRef`) next to the base workflows, so nothing the PR adds, in GitHub
+    Actions or another CI, can turn a tool off. CI that runs only on PRs is
+    still seen when it is a GitHub Actions workflow on the base branch. The skip
+    test gives the PR head a `shellcheck` check run that does not skip
+    shellcheck.'
+  scope: repo
+  source: manki-review/manki#1043
+  created_at: 2026-11-06
