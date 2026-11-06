@@ -824,3 +824,11 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984256347
+  content: "User context on \"src/index.ts\": Fixed in f3736ac. The notices carry
+    a `manki-too-big` marker, and each push edits Manki's latest one that has no
+    ticked box, as the pause notice does. A ticked notice stays as it is, and
+    the next push posts a fresh one. A test covers the edit."
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
