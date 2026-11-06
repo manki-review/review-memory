@@ -1027,3 +1027,11 @@
   scope: repo
   source: manki-review/manki#1073
   created_at: 2026-11-06
+- id: learn-1794003540524
+  content: "User context on \"src/index.ts\": Fixed in 14ac699.
+    `dropProgressComment` keeps only the earlier comment's id now.
+    `setSettingsBlock` reads that comment just before the edit, strips its block
+    and puts the new one on, so another run's later edit stays."
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
