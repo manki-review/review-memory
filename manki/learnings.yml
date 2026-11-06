@@ -840,3 +840,12 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984734175
+  content: "User context on \"src/index.ts\": Fixed in 8a67cbd. `findPauseNotice`
+    became `findOpenNotice(target, marker, lastRoundAt)`, and the too-big path
+    passes the last round's timestamp. An unanswered too-big notice is edited
+    only when it was posted or updated after Manki's last round. Otherwise a
+    fresh one is posted where the author sees it."
+  scope: repo
+  source: manki-review/manki#1062
+  created_at: 2026-11-06
