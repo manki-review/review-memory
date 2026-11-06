@@ -21,3 +21,11 @@
   scope: repo
   source: manki-review/manki#1040
   created_at: 2026-11-06
+- id: learn-1793975479034
+  content: 'User context on "src/github.ts": Fixed in 4612593. The file that
+    crosses the 30,000-character cap is now cut to fit instead of dropped, and
+    only farther files are left out. A single oversized nearest file is kept up
+    to the cap, and a test covers that case.'
+  scope: repo
+  source: manki-review/manki#1039
+  created_at: 2026-11-06
