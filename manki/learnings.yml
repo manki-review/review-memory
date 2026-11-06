@@ -1072,3 +1072,13 @@
   scope: repo
   source: manki-review/manki#1075
   created_at: 2026-11-06
+- id: learn-1794005489253
+  content: "User context on \"src/refute.ts\": Fixed in 2e103ba: a refutation now
+    stores the finding's file and every file its `proof` cites, with one SHA-256
+    over all of them, and a later round reuses it only while that digest still
+    matches. Removing the check in `src/api.ts` now forces a new check. An
+    outcome that cites a file the workspace does not hold is never reused.
+    `src/refute.test.ts` covers both cases."
+  scope: repo
+  source: manki-review/manki#1076
+  created_at: 2026-11-06
