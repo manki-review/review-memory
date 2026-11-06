@@ -132,3 +132,13 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793976319551
+  content: "User context on \"src/providers/cli-utils.ts\": The after-run calls
+    are in this PR: `src/providers/openai.ts` chains `.finally(() =＞
+    registerAuthFileSecrets(join(codexHome, 'auth.json')))` onto `runCli`, and
+    `src/providers/gemini.ts` does the same for `join(geminiCredsDir,
+    'oauth_creds.json')`. The seeding tests in `openai.test.ts` and
+    `gemini.test.ts` assert both calls with the exact paths."
+  scope: repo
+  source: manki-review/manki#1042
+  created_at: 2026-11-06
