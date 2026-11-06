@@ -325,3 +325,10 @@
   scope: repo
   source: manki-review/manki#1053
   created_at: 2026-11-06
+- id: learn-1793978404285
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 4a7321c.
+    `ALL_PROXY` and `NODE_USE_ENV_PROXY` are on the list (any case, so
+    `all_proxy` too), SETUP.md names them, and the test covers both.'
+  scope: repo
+  source: manki-review/manki#1051
+  created_at: 2026-11-06
