@@ -1,1 +1,11 @@
-[]
+- id: learn-1793975085511
+  content: 'User context on "src/judge.ts": Fixed in 5f62189. The rule now covers
+    only a value the code produces and keeps valid. When code in the PR can
+    produce a bad value, the guard is not the finding, and the judge grades the
+    failure that bad value causes by the table, so memory unsafety still blocks.
+    A new grading fixture (`11_severe_on_internal_value.json`) has an internally
+    computed index writing past a buffer in `unsafe` Rust. The live replay
+    grades it `blocker`, and the other ten fixtures still pass.'
+  scope: repo
+  source: manki-review/manki#1040
+  created_at: 2026-11-06
