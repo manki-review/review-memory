@@ -849,3 +849,12 @@
   scope: repo
   source: manki-review/manki#1062
   created_at: 2026-11-06
+- id: learn-1793984973569
+  content: 'User context on "src/providers/cli-utils.ts": Fixed in 70b83d5. The
+    `private_key` and `private_key_id` of the service account file are
+    registered too, each line of the key included. Public fields such as
+    `client_email` stay unredacted. The test writes a key file and checks both
+    are redacted and the email is not.'
+  scope: repo
+  source: manki-review/manki#1064
+  created_at: 2026-11-06
