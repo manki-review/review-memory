@@ -928,3 +928,15 @@
   scope: repo
   source: manki-review/manki#1069
   created_at: 2026-11-06
+- id: learn-1794001590151
+  content: "User context on \"src/index.ts\": Hardened in 3219169, though I don't
+    think the loop can happen. Manki's own edits stop at the top of `run()`: a
+    bot sender is ignored before any routing. In a dispatched run the sender is
+    the comment's last editor from GraphQL, which is the App bot for Manki's
+    edits. A `GITHUB_TOKEN` edit fires no workflow at all. A settings edit also
+    reviews only when the coordinator queued a mode for this run's `run_id`, and
+    a run without one returns before it writes anything. So an edit that is not
+    a tick star"
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
