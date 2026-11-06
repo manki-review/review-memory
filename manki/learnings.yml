@@ -472,3 +472,11 @@
   scope: repo
   source: manki-review/manki#1052
   created_at: 2026-11-06
+- id: learn-1793980766852
+  content: 'User context on "src/review-record.ts": Fixed in 4d7197d.
+    `extractReplyRecords` returns only the last reply record, the one Manki
+    appends after the answer. A record quoted in the answer is ignored, and a
+    test covers a forged record above the real one.'
+  scope: repo
+  source: manki-review/manki#1056
+  created_at: 2026-11-06
