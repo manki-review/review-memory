@@ -453,3 +453,15 @@
   scope: repo
   source: manki-review/manki#1052
   created_at: 2026-11-06
+- id: learn-1793980606612
+  content: 'User context on "src/related-repos.ts": Fixed in 4440749. `init`
+    throws "could not remove ＜dir＞" when the directory is still there after
+    removal, so git never runs inside a leftover `.git`. Before anything else,
+    `removeUnlessRealDirectory` clears the cache directory and the owner
+    directory when either is a symlink or file, and throws when that fails. The
+    cleanup after a failure only removes the repo directory when both are real
+    directories, so it never deletes through a symlink. A new test covers a
+    `.git` that cannot be removed (0555)'
+  scope: repo
+  source: manki-review/manki#1052
+  created_at: 2026-11-06
