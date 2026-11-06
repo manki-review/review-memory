@@ -1013,3 +1013,10 @@
   scope: repo
   source: manki-review/manki#1073
   created_at: 2026-11-06
+- id: learn-1794003342564
+  content: "User context on \"src/github.test.ts\": Fixed in 6dee00b. The
+    assertion is now `not.toContain('#L48')`, and the large `src/c.ts` fixture
+    also checks that a file over the old 50 KB limit gets its line count."
+  scope: repo
+  source: manki-review/manki#1073
+  created_at: 2026-11-06
