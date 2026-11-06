@@ -578,3 +578,11 @@
   scope: repo
   source: manki-review/manki#1057
   created_at: 2026-11-06
+- id: learn-1793981495380
+  content: 'User context on "scripts/calibration.ts": Fixed in cb37297 with the
+    suggested change: `Dropped` and `Changed` are gone from `AUTHOR_FIXED`. The
+    test adds "Dropped this, the pool is bounded.", which stays unclear. The
+    committed set is unchanged by it.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
