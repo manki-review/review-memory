@@ -549,3 +549,14 @@
   scope: repo
   source: manki-review/manki#1058
   created_at: 2026-11-06
+- id: learn-1793981139706
+  content: 'User context on "src/github.ts": Keeping this as is. Since warnings
+    stopped blocking, every warning carries the follow-up tag, whatever code it
+    sits on. With the exemption, every warning on reviewed code would skip the
+    list and could get an inline thread again, which is what this change
+    removes. A warning on reviewed code belongs under "Previously missed", and a
+    warning on new code still goes to the inline or "smaller fixes" path because
+    its `origin` is `new`.'
+  scope: repo
+  source: manki-review/manki#1057
+  created_at: 2026-11-06
