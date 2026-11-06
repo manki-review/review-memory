@@ -192,3 +192,11 @@
   scope: repo
   source: manki-review/manki#1043
   created_at: 2026-11-06
+- id: learn-1793976986661
+  content: 'User context on "src/static-signals.ts": bf2bdbb makes this checkable
+    in the PR. The Rust test in `src/static-signals.test.ts` now makes the
+    `Cargo.toml` read fail with HTTP 502 and expects `collectStaticSignals` to
+    resolve with the check-run results and without the Rust rules.'
+  scope: repo
+  source: manki-review/manki#1046
+  created_at: 2026-11-06
