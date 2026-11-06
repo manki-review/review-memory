@@ -952,3 +952,11 @@
   scope: repo
   source: manki-review/manki#1068
   created_at: 2026-11-06
+- id: learn-1794001658517
+  content: "User context on \"src/github.ts\": Fixed in 3219169.
+    `editProgressComment` keeps the block only while the live comment still has
+    one, so a superseded run's later edits stay without it. The dashboard test
+    covers it."
+  scope: repo
+  source: manki-review/manki#1067
+  created_at: 2026-11-06
