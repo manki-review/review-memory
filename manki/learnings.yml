@@ -151,3 +151,15 @@
   scope: repo
   source: manki-review/manki#1045
   created_at: 2026-11-06
+- id: learn-1793976574585
+  content: 'User context on "src/static-signals.ts": `fetchConfigFile` never
+    rejects. It is `readConfigFile(...).catch(() =＞ null)` in `src/github.ts`
+    (`fetchConfigFile`, the line `return readConfigFile(octokit, owner, repo,
+    ref, configPath).catch(() =＞ null);`), so a 5xx or a socket reset on
+    `Cargo.toml` resolves to `null`. `usesRustRules` then returns `false`, the
+    Rust rules do not run, and `Promise.all` still resolves with the
+    `waitForChecks` result and every other source. `readConfigFile` is the
+    variant that throws, and this code does not use '
+  scope: repo
+  source: manki-review/manki#1046
+  created_at: 2026-11-06
