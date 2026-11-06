@@ -282,3 +282,14 @@
   scope: repo
   source: manki-review/manki#1049
   created_at: 2026-11-06
+- id: learn-1793977996116
+  content: 'User context on "src/review-record.ts": Fixed in cdabbd2. The record
+    JSON now goes through `sanitizeTokens(redactSecrets(...))` before it is
+    written, plain or compressed, and the test checks a `ghs_` token is
+    scrubbed. One correction for the record: the plain review body is not passed
+    through `sanitizeTokens` anywhere either (only failure messages and logs
+    are). The request hook from #1042 redacts registered secrets only. So the
+    plain record never had this scrubbing. It does now, in both forms.'
+  scope: repo
+  source: manki-review/manki#1049
+  created_at: 2026-11-06
