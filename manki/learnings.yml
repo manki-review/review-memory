@@ -542,3 +542,10 @@
   scope: repo
   source: manki-review/manki#1057
   created_at: 2026-11-06
+- id: learn-1793981131864
+  content: 'User context on "scripts/calibration.ts": Fixed in 3c39348. `main`
+    catches the error per pull request, prints `Skipping ＜owner/repo＞#＜pr＞:
+    ＜error＞` and goes on with the rest.'
+  scope: repo
+  source: manki-review/manki#1058
+  created_at: 2026-11-06
