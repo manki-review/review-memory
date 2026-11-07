@@ -1191,3 +1191,15 @@
   path: src/index.ts
   source: manki-review/manki#1090
   created_at: 2026-11-07
+- id: learn-1794056912895
+  content: 'Findings like "`carriedBlockers` goes up for every finding skipped
+    because an open thread already carries it, and n..." do not apply on
+    `src/github.ts`: This one does not hold. The loop in `postReview` starts
+    with `if (!isBlockingFinding(f)) { ...; continue; }` (`src/github.ts`, the
+    first lines of the `for (const f of result.findings)` body), so a warning or
+    suggestion never reaches `carriedBlockers++`. `fresh` cannot go negative.
+    The new case in `g'
+  scope: repo
+  path: src/github.ts
+  source: manki-review/manki#1095
+  created_at: 2026-11-07
