@@ -1203,3 +1203,15 @@
   path: src/github.ts
   source: manki-review/manki#1095
   created_at: 2026-11-07
+- id: learn-1794061315782
+  content: 'Findings like "Unrelated change: optional `prompt` input for the
+    provider smoke workflow" do not apply on
+    `.github/workflows/provider-smoke.yml`: Kept on purpose. The coordinator
+    asked for the `prompt` input in this PR, so a manual smoke run can show the
+    CLIs refusing a web search, the check #1110 asked for. It is in its own
+    commit (`ci: take an optional prompt in the provider smoke`), so it reverts
+    on its own.'
+  scope: repo
+  path: .github/workflows/provider-smoke.yml
+  source: manki-review/manki#1128
+  created_at: 2026-11-07
