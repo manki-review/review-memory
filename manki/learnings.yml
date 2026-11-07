@@ -1179,3 +1179,15 @@
   scope: repo
   source: manki-review/manki#1080
   created_at: 2026-11-07
+- id: learn-1794040787639
+  content: 'Findings like "`handlePullRequest` no longer skips a draft PR or a PR
+    with Pause ticked, for every `pull_request` e..." do not apply on
+    `src/index.ts`: A run the service did not dispatch never reaches
+    `handlePullRequest`. Since #1084, `main` fails any run that is not a
+    `workflow_dispatch` (`NOT_DISPATCHED` in `src/index.ts`) before the event is
+    restored or a handler runs. A workflow on `pull_request` therefore stops at
+    once and calls no model. Whic'
+  scope: repo
+  path: src/index.ts
+  source: manki-review/manki#1090
+  created_at: 2026-11-07
