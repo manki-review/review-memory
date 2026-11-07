@@ -1161,3 +1161,21 @@
   scope: repo
   source: manki-review/manki#1080
   created_at: 2026-11-07
+- id: learn-1794036016223
+  content: >-
+    User context on "src/index.ts": Same reason as the event-driven thread: the
+    box path is only reachable on dispatched runs, and the next PR of #1024
+    removes event-driven mode outright. No install runs it, so there is no repo
+    where a ticked box goes unread.
+
+
+    On the smaller fix in the review body (old skip and cap notices read as
+    progress comments in `findProgressComment`):
+
+
+    Not fixing this one here. `findProgressComment` and `isReviewInProgress` are
+    deleted in the next PR of #1024, which replaces the comment-marker lock with
+    the
+  scope: repo
+  source: manki-review/manki#1080
+  created_at: 2026-11-07
