@@ -1146,3 +1146,18 @@
   scope: repo
   source: manki-review/manki#1076
   created_at: 2026-11-06
+- id: learn-1794035896909
+  content: >-
+    User context on "src/index.ts": This is intended. Issue #1024 removes
+    event-driven mode in v7, and this PR is the first of its four PRs. The next
+    one deletes the event-driven entry points, `isReviewInProgress`, the other
+    in-app locks and the event-driven `manki.yml` from the docs, so every run
+    reaches this code as a dispatched run.
+
+
+    No install runs event-driven mode today: manki, token-service and the
+    rust-dashcore fork are all in webhook mode and get dispatched runs, where
+    `loadSettings` reads the coordinator state and the bo
+  scope: repo
+  source: manki-review/manki#1080
+  created_at: 2026-11-07
