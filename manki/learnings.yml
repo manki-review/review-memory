@@ -1215,3 +1215,15 @@
   path: .github/workflows/provider-smoke.yml
   source: manki-review/manki#1128
   created_at: 2026-11-07
+- id: learn-1794116045414
+  content: 'Findings like "`fetchPriorRoundContexts` is awaited without a
+    `.catch`, unlike the `findBotThread` call below it, s..." do not apply on
+    `src/interaction.ts`: Since 80d20a9 the round lookup runs only after the
+    model answered "Fixed." on a blocking or security thread, and it still
+    cannot block the reply. `fetchPriorRoundContexts` (`src/recap.ts`) wraps the
+    review listing and the parsing in `try`/`catch` and returns `{ priorRounds:
+    [] }` on any error, after'
+  scope: repo
+  path: src/interaction.ts
+  source: manki-review/manki#1139
+  created_at: 2026-11-08
