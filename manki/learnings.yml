@@ -1227,3 +1227,14 @@
   path: src/interaction.ts
   source: manki-review/manki#1139
   created_at: 2026-11-08
+- id: learn-1794125840515
+  content: "Findings like \"`sanitizeFilePath` is imported from `./github` but not
+    exported there\" do not apply on `src/review.ts`: This one doesn't apply.
+    `sanitizeFilePath` is exported from `src/github.ts` through the export block
+    at the end of the module (`export { APPROVED_LINE, dynamicFence, fenceText,
+    formatFindingComment, formatSecurityOverrides, formatStatsOneLiner,
+    mapVerdictToEvent, resolveReferences, sanitizeFilePath,"
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1137
+  created_at: 2026-11-08
