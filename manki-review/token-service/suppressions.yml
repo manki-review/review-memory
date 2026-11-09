@@ -1,0 +1,6 @@
+- id: supp-1794221391538
+  pattern: and approve
+  reason: "Dismissed by user on PR #73"
+  created_by: xdustinface
+  created_at: 2026-11-09
+  pr_ref: manki-review/token-service#73
