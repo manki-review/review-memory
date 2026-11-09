@@ -1238,3 +1238,13 @@
   path: src/review.ts
   source: manki-review/manki#1137
   created_at: 2026-11-08
+- id: learn-1794212894440
+  content: 'Findings like "No test covers the verdict reader prompt change" do not
+    apply on `src/verdict.ts`: Already covered: the cold prompt test in
+    `src/review.test.ts` asserts that the verdict reader call contains `judge
+    the code cold.` followed by `UNTRUSTED_CONTENT_RULE` and
+    `VERIFY_CLAIMS_RULE`, so reverting the change fails it.'
+  scope: repo
+  path: src/verdict.ts
+  source: manki-review/manki#1295
+  created_at: 2026-11-09
