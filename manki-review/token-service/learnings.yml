@@ -1,0 +1,11 @@
+- id: learn-1794198706130
+  content: 'Findings like "A transient GitHub failure now loses the conflict note
+    for good" do not apply on `src/coordinator.ts`: Keeping this as is, on
+    purpose. The note only explains the skip. The `Manki` check that
+    `reportConflict` creates on the same head carries the same text ("Rebase
+    needed", "This PR conflicts with `＜base＞`. Rebase it, and Manki reviews it
+    then."), and it still retries on failure. So a lost note costs n'
+  scope: repo
+  path: src/coordinator.ts
+  source: manki-review/token-service#74
+  created_at: 2026-11-09
