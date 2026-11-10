@@ -1248,3 +1248,15 @@
   path: src/verdict.ts
   source: manki-review/manki#1295
   created_at: 2026-11-09
+- id: learn-1794296536536
+  content: 'Findings like "Existing `exclude_paths` lists silently stop excluding
+    `dist/**`, `*.generated.*` and lockfiles" do not apply on `src/config.ts`:
+    Replacing the defaults is the decision this PR implements, not an accident.
+    The issue asks for it ("`exclude_paths: []` means nothing is excluded, and
+    the docs say the list replaces the defaults"), and the owner is the only
+    Manki user, so this release makes a clean break with no transition warning
+    o'
+  scope: repo
+  path: src/config.ts
+  source: manki-review/manki#1347
+  created_at: 2026-11-10
