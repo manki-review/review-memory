@@ -1283,3 +1283,13 @@
   path: src/review.ts
   source: manki-review/manki#1414
   created_at: 2026-11-11
+- id: learn-1794386423362
+  content: "Findings like \"A reopened finding takes the earlier round's `wrong`
+    row even when the judge stated a lower row this round\" do not apply on
+    `src/refute.ts`: The round 3 case is fixed in d757e26e, and bringing the
+    earlier `wrong`/`rare` cell back is intended, so the judge cannot drop a
+    reach check by restating the row a round later."
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1412
+  created_at: 2026-11-11
