@@ -1,0 +1,11 @@
+- id: learn-1794411791606
+  content: 'Findings like "New public `next_unused_index` has no test" do not
+    apply on `key-wallet/src/managed_account/address_pool.rs`:
+    `next_unused_index` is no longer public API. The account getters that used
+    it were removed as unused, and it is now a private helper of
+    `next_unused_with_info`. The existing `next_unused` and reservation tests
+    cover its behavior.'
+  scope: repo
+  path: key-wallet/src/managed_account/address_pool.rs
+  source: dashpay/rust-dashcore#1377
+  created_at: 2026-11-11
