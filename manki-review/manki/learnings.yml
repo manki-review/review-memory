@@ -112,3 +112,13 @@
   path: src/refute.ts
   source: manki-review/manki#1412
   created_at: 2026-11-11
+- id: learn-1794393573223
+  content: 'Findings like "Troubleshooting row quotes an error message that does
+    not appear in the source" do not apply on `docs/getting-started.md`: The
+    text is real: `src/github.ts` logs it from the template `GitHub refused the
+    ${event} review`, and `event` is `APPROVE` at run time, so the run log shows
+    exactly the quoted line.'
+  scope: repo
+  path: docs/getting-started.md
+  source: manki-review/manki#1447
+  created_at: 2026-11-11
