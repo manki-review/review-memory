@@ -1272,3 +1272,14 @@
   path: src/index.ts
   source: manki-review/manki#1363
   created_at: 2026-11-10
+- id: learn-1794381537338
+  content: "Findings like \"Matching finders by model ref misses a custom group
+    that names its model by id\" do not apply on `src/review.ts`: Kept as it is:
+    `reviewer_pair` can resolve to the reviewer's own model, and then both
+    finders of the pair would match the earlier group's finder by resolved
+    model, so the added finder would be named again. The PR description lists
+    the custom group named by model id as not covered."
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1414
+  created_at: 2026-11-11
