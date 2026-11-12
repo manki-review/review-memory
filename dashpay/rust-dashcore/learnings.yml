@@ -9,3 +9,15 @@
   path: key-wallet/src/managed_account/address_pool.rs
   source: dashpay/rust-dashcore#1377
   created_at: 2026-11-11
+- id: learn-1794499083300
+  content: 'Findings like "No regression test covers the address-pool paths that
+    issues #713 and #715 report" do not apply on
+    `key-wallet-manager/src/process_block.rs`: `monitor_hash()` hashes
+    `monitored_addresses()` and `watched_outpoints()` directly, the same lists
+    the bloom filter is built from. Which function grows the pool does not
+    matter: if the list changes, the hash changes. The bug class of #713 and
+    #715 (a path that forgets to bump) cannot exist anymore, '
+  scope: repo
+  path: key-wallet-manager/src/process_block.rs
+  source: dashpay/rust-dashcore#1359
+  created_at: 2026-11-12
