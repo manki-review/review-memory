@@ -122,3 +122,15 @@
   path: docs/getting-started.md
   source: manki-review/manki#1447
   created_at: 2026-11-11
+- id: learn-1794449094829
+  content: "Findings like \"Old-layout thread comments, with the severity marker
+    on the first line, now read a marker quoted in their fix\" do not apply on
+    `src/utils.ts`: This does not apply to thread comments, so `ownMarker` is
+    unchanged. - A thread's first comment ended with its markers before #961
+    too. In the parent of 60cc0b7, `formatFindingComment` in `src/github.ts`
+    appends the severity marker with `comment += ...` as the last step. The
+    finding data was added l"
+  scope: repo
+  path: src/utils.ts
+  source: manki-review/manki#1501
+  created_at: 2026-11-12
