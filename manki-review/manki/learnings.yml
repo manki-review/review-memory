@@ -134,3 +134,14 @@
   path: src/utils.ts
   source: manki-review/manki#1501
   created_at: 2026-11-12
+- id: learn-1794660290032
+  content: 'Findings like "Existing threads with the `Warning: fix, explain or
+    track` label no longer parse" do not apply on `src/recap.ts`: No open thread
+    can carry this label. The code that posts a label is in `src/github.ts`, and
+    `git log origin/main -S"fix, explain or track" -- src/github.ts` finds no
+    commit: the label was added in 988d43f5 and replaced in bb0f0bd9, both on
+    the #1646 branch before its squash, so only `src/recap.ts` a'
+  scope: repo
+  path: src/recap.ts
+  source: manki-review/manki#1656
+  created_at: 2026-11-14
