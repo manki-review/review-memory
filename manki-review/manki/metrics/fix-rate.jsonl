@@ -338,3 +338,4 @@
 {"pr":1669,"mergedSha":"99c75a8e1044bf65f0727611d670c6fb1b665235","rounds":1,"class":"behavior","group":"pair","configDigest":"03d52dd20d2eb98572fd703b9ab68b56f5d5813866ff6c175cae29de6b8a27aa","counts":[],"calibration":[]}
 {"pr":1670,"mergedSha":"5e2f051a88205e159d3585c6f48f0b30729fb46e","rounds":3,"class":"behavior","group":"pair","configDigest":"03d52dd20d2eb98572fd703b9ab68b56f5d5813866ff6c175cae29de6b8a27aa","counts":[],"calibration":[]}
 {"pr":1673,"mergedSha":"290a5572fb91fdc0a27ac04b5d16790316bf1c4e","rounds":1,"class":"behavior","group":"pair","configDigest":"03d52dd20d2eb98572fd703b9ab68b56f5d5813866ff6c175cae29de6b8a27aa","counts":[],"calibration":[]}
+{"pr":1674,"mergedSha":"2cb1a2620edc5ecde5ea18525a02981a9f721a80","rounds":1,"class":"docs","group":"trivial","configDigest":"03d52dd20d2eb98572fd703b9ab68b56f5d5813866ff6c175cae29de6b8a27aa","counts":[],"calibration":[]}
