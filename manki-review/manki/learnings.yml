@@ -156,15 +156,3 @@
   path: src/diff.ts
   source: manki-review/manki#1655
   created_at: 2026-11-14
-- id: learn-1794808660148
-  content: "Findings like \"When reopening a raised answered thread fails, an
-    earlier resolve by someone with the role lifts the hold again after th\" do
-    not apply on `src/state.ts`: The half-measure is gone, and the docs no
-    longer say that a raise overrides an earlier resolve. `raisedByPending` is
-    removed in 7e23ddc, so the round's verdict and the later checks follow one
-    rule (`src/state.ts:421`). The case behind the finding cannot happen. A
-    round puts a finding only into a thr"
-  scope: repo
-  path: src/state.ts
-  source: manki-review/manki#1713
-  created_at: 2026-11-16
