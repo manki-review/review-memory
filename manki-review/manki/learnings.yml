@@ -156,3 +156,14 @@
   path: src/diff.ts
   source: manki-review/manki#1655
   created_at: 2026-11-14
+- id: learn-1794917746284
+  content: "Findings like \"Existing `skip_*` and `convergence` settings are
+    silently dropped, so skip rules and the round cap s...\" do not apply on
+    `src/config.ts`: This is the owner's decision: a removed or moved key gets
+    the unknown key warning and nothing else, with no alias and no load error.
+    `convergence.max_auto_rounds` is the only moved key left in this PR, and the
+    PR text names the move."
+  scope: repo
+  path: src/config.ts
+  source: manki-review/manki#1755
+  created_at: 2026-11-17
