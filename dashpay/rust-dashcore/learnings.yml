@@ -21,3 +21,16 @@
   path: key-wallet-manager/src/process_block.rs
   source: dashpay/rust-dashcore#1359
   created_at: 2026-11-12
+- id: learn-1794887848848
+  content: "Findings like \"The ProDisTx and ProUpSharedRegTx tests pass without
+    any change in `max_signed_size`\" do not apply on
+    `dash/src/blockdata/transaction/special_transaction/provider_dissolve.rs`:
+    That's intended. This PR changes no code path for ProDisTx or
+    ProUpSharedRegTx; it documents that their placeholders must carry dummy
+    signatures of the final count. These two tests pin that contract (a
+    placeholder with N dummies prices the same as the signed payload), so a
+    later change to `max_signe"
+  scope: repo
+  path: dash/src/blockdata/transaction/special_transaction/provider_dissolve.rs
+  source: dashpay/rust-dashcore#1424
+  created_at: 2026-11-17
