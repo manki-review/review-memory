@@ -20,3 +20,15 @@
   path: src/manki.ts
   source: manki-review/token-service#128
   created_at: 2026-11-18
+- id: learn-1795018148796
+  content: "Findings like \"Notice label `Review now` differs from the bytes
+    Manki's `renderSettingsBlock` produces\" do not apply on `src/manki.ts`: The
+    Manki side of this has merged, so the bytes match now. On Manki's main,
+    `renderSettingsBlock` labels the `again` box \"Review now\" before any
+    review ([src/settings.ts line
+    39](https://github.com/manki-review/manki/blob/4c23c817ef51efbfcc9790f83959\
+    087d3d6f6b06/src/settings.ts#L39)). Its output for"
+  scope: repo
+  path: src/manki.ts
+  source: manki-review/token-service#128
+  created_at: 2026-11-18
