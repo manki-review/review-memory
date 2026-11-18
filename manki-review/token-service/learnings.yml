@@ -9,3 +9,14 @@
   path: src/coordinator.ts
   source: manki-review/token-service#74
   created_at: 2026-11-09
+- id: learn-1795018039938
+  content: "Findings like \"Help reply now differs from Manki's `/manki help`
+    text\" do not apply on `src/manki.ts`: Fixed in e7bed19. Manki's
+    `handleHelp` on main (since manki-review/manki#1819) posts \"Tick the review
+    box in the settings block to review it again\", and `HELP_REPLY` holds the
+    same row. The help test in `test/coordinator.test.ts` (\"answers a help
+    command at once with Manki's command table...\") now c"
+  scope: repo
+  path: src/manki.ts
+  source: manki-review/token-service#128
+  created_at: 2026-11-18
