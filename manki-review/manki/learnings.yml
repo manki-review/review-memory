@@ -167,3 +167,15 @@
   path: src/config.ts
   source: manki-review/manki#1755
   created_at: 2026-11-17
+- id: learn-1795046117475
+  content: "Findings like \"Ticking Review again in an incomplete review edits it,
+    so the finished parts of that review are never reused\" do not apply on
+    `src/github.ts`: Not fixing this, on purpose. Ticking the box edits the
+    review, and the round record a retry would reuse sits in that same review
+    body. Anyone who can tick the box can also edit that record, for example to
+    mark a finder's part as finished with no findings, and a reuse would then
+    carry the forged part"
+  scope: repo
+  path: src/github.ts
+  source: manki-review/manki#1856
+  created_at: 2026-11-18
