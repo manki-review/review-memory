@@ -34,3 +34,12 @@
   path: dash/src/blockdata/transaction/special_transaction/provider_dissolve.rs
   source: dashpay/rust-dashcore#1424
   created_at: 2026-11-17
+- id: learn-1795002435457
+  content: 'Findings like "The batch-count test no longer exercises the public
+    dispatcher" do not apply on `hashes/src/siphash24.rs`: Going through
+    `siphash_batch` would hit `siphash_each` in debug test runs and drop kernel
+    coverage; the dispatcher itself is covered by `check_bulk`.'
+  scope: repo
+  path: hashes/src/siphash24.rs
+  source: dashpay/rust-dashcore#1442
+  created_at: 2026-11-18
