@@ -179,3 +179,15 @@
   path: src/github.ts
   source: manki-review/manki#1856
   created_at: 2026-11-18
+- id: learn-1795074008474
+  content: "Findings like \"Second read still asks for a line per unit, but
+    discards the answer and tells the model an empty array is complete\" do not
+    apply on `src/review.ts`: Kept as it is. A second read sends the finder's
+    own message again so the provider's prompt cache covers everything up to the
+    appended note. The units section sits before the diff, so dropping it would
+    change that prefix and make every second read pay for the whole message
+    again. The unit lines a sec"
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1854
+  created_at: 2026-11-19
