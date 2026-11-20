@@ -53,3 +53,12 @@
   path: .github/scripts/ci_config.py
   source: dashpay/rust-dashcore#1458
   created_at: 2026-11-20
+- id: learn-1795191887879
+  content: "Findings like \"The `wallet` flag now counts `key-wallet` lines run by
+    the `dashcore-rpc-json` tests\" do not apply on `.codecov.yml`: Same as the
+    `core` flag thread: each flag now counts its crate's lines run by any test
+    in the combined job, and the PR body notes it."
+  scope: repo
+  path: .codecov.yml
+  source: dashpay/rust-dashcore#1458
+  created_at: 2026-11-20
