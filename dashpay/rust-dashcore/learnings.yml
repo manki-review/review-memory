@@ -62,3 +62,14 @@
   path: .codecov.yml
   source: dashpay/rust-dashcore#1458
   created_at: 2026-11-20
+- id: learn-1795217831756
+  content: 'Findings like "The public filter request key changes type and
+    conflates different ranges" do not apply on
+    `dash-spv/src/network/broker.rs`: Marked the PR as breaking
+    (`fix(dash-spv)!:`), since `RequestKey` is public. Distinct ranges cannot
+    share a stop hash here: batch boundaries are fixed, so no two `getcfilters`
+    end at the same block, and `CfHeaders` was already keyed by its stop hash.'
+  scope: repo
+  path: dash-spv/src/network/broker.rs
+  source: dashpay/rust-dashcore#1370
+  created_at: 2026-11-20
