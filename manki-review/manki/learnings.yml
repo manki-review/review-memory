@@ -203,3 +203,15 @@
   path: src/interaction.ts
   source: manki-review/manki#1867
   created_at: 2026-11-19
+- id: learn-1795136635740
+  content: "Findings like \"Manki's no-fix answer on a thread a maintainer
+    resolved first still counts as a fix claim and can pause review\" do not
+    apply on `src/recap.ts`: Leaving this one as is. In that order (a maintainer
+    resolves first, then Manki accepts no fix) the thread still counts as a fix
+    claim, so a returning blocker pauses automatic review, which is what main
+    does today for every thread. The pause is the safe side: the PR still needs
+    a human, nothing merge"
+  scope: repo
+  path: src/recap.ts
+  source: manki-review/manki#1871
+  created_at: 2026-11-20
