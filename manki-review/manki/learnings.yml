@@ -215,3 +215,15 @@
   path: src/recap.ts
   source: manki-review/manki#1871
   created_at: 2026-11-20
+- id: learn-1795284195428
+  content: "Findings like \"A paired finding on a changed or in-hunk line loses
+    its pre-existing claim when the judge merges the two copies\" do not apply
+    on `src/judge.ts`: Not changing this one. When two finders report the same
+    finding and the judge merges them, the claim is dropped unless both copies
+    sit on code the PR did not change. The finding is then posted as the PR's
+    own, which is today's behaviour and the safe side of the owner's rule that a
+    finding stays new "
+  scope: repo
+  path: src/judge.ts
+  source: manki-review/manki#1896
+  created_at: 2026-11-21
