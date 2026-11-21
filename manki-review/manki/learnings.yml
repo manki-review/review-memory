@@ -275,3 +275,15 @@
   path: src/origin.ts
   source: manki-review/manki#1896
   created_at: 2026-11-21
+- id: learn-1795288417212
+  content: "Findings like \"One model's answer hides a warning on an unchanged
+    line that the PR breaks through a changed callee\" do not apply on
+    `src/types.ts`: Not changing this. One answer settling a warning or note on
+    an unchanged line is the decided rule for this PR. The answer must find the
+    same failure at the base, and the prompt counts a failure the PR makes newly
+    reachable, for example through a changed callee, as `introduced`. Any
+    finding that woul"
+  scope: repo
+  path: src/types.ts
+  source: manki-review/manki#1896
+  created_at: 2026-11-21
