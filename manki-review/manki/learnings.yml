@@ -227,3 +227,15 @@
   path: src/judge.ts
   source: manki-review/manki#1896
   created_at: 2026-11-21
+- id: learn-1795287876396
+  content: "Findings like \"A blocker thread fixed in another file stays blocking
+    if the two-refuter check does not confirm it in that push\" do not apply on
+    `src/review.ts`: Keeping this as is. Issue #1900 keeps the push to the
+    thread's own files as the default and adds the fix elsewhere path only for
+    the round whose push holds the fix. Re-checking an open thread against the
+    head in later rounds is a wider change to how threads are evaluated, and a
+    thread that stays ope"
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-21
