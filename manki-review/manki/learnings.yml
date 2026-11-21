@@ -263,3 +263,15 @@
   path: src/origin.ts
   source: manki-review/manki#1896
   created_at: 2026-11-21
+- id: learn-1795288321261
+  content: "Findings like \"For a changed line, or an unchanged flagged line, the
+    code never checks that the base fails the same way, so model answe\" do not
+    apply on `src/origin.ts`: Not changing this, by design. The code check
+    proves only that the cited lines exist where the answer says. Whether the
+    failure is the same is the model's call, which is why a changed line, a
+    blocker, a finding that would block and a security finding need two
+    `pre_existing` answers on different model"
+  scope: repo
+  path: src/origin.ts
+  source: manki-review/manki#1896
+  created_at: 2026-11-21
