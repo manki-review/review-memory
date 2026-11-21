@@ -251,3 +251,15 @@
   path: src/reply-check.ts
   source: manki-review/manki#1903
   created_at: 2026-11-21
+- id: learn-1795288234006
+  content: "Findings like \"Origin answers are not reused across rounds, so a
+    hidden pre-existing warning can come back after a push\" do not apply on
+    `src/origin.ts`: Not changing this, by design. A later push to any file can
+    make an older failure the PR's own, for example a changed callee or a new
+    caller, so a stored answer that the base fails the same way is never reused.
+    The decided rule for this PR is that `unsure`, a failed call or no tools
+    leaves the findin"
+  scope: repo
+  path: src/origin.ts
+  source: manki-review/manki#1896
+  created_at: 2026-11-21
