@@ -287,3 +287,15 @@
   path: src/types.ts
   source: manki-review/manki#1896
   created_at: 2026-11-21
+- id: learn-1795305262964
+  content: 'Findings like "Every thread reply now reads all round records and
+    compares commits, even when the answer is not Fixed" do not apply on
+    `src/interaction.ts`: Fixed in 72b60a77 for the merged or closed case:
+    `handleReviewCommentReply` in src/interaction.ts skips
+    `fetchPriorRoundContexts` there and counts the changes from the commit the
+    thread was posted on, since no live thread exists for a round to move that
+    point. Test: the merged or closed PR case in s'
+  scope: repo
+  path: src/interaction.ts
+  source: manki-review/manki#1903
+  created_at: 2026-11-21
