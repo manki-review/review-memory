@@ -299,3 +299,15 @@
   path: src/interaction.ts
   source: manki-review/manki#1903
   created_at: 2026-11-21
+- id: learn-1795306787763
+  content: 'Findings like "A fix whose only added code line starts with `*` or
+    `--` or `#` can never clear a thread elsewhere" do not apply on
+    `src/refute.ts`: Keeping this as is. A fix whose only added code line starts
+    with `*`, `--` or `#` keeps its thread open, which is the safe side for a
+    check that closes a blocker thread, and a person can still resolve it.
+    Telling a dereference from a comment line would need the language of each
+    file, so it is a heur'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-22
