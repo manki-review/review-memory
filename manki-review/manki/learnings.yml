@@ -370,3 +370,14 @@
   path: src/judge.fixtures/grading/43_cut_list_note.json
   source: manki-review/manki#1909
   created_at: 2026-11-22
+- id: learn-1795308188919
+  content: 'Findings like "A disproof can rest on unchanged code in a third file
+    and still clear a blocker thread" do not apply on `src/refute.ts`: This code
+    is gone in 0fef60fc. A fix in another file no longer resolves a thread, so
+    the line checks this finding is about were removed. Only the original check
+    stays, that each refuter cites a line the push added to the named file, and
+    it now decides only whether Manki posts a note naming that file'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-22
