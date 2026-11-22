@@ -323,3 +323,14 @@
   path: src/refute.ts
   source: manki-review/manki#1905
   created_at: 2026-11-22
+- id: learn-1795306998192
+  content: 'Findings like "A `/*` inside a string or glob marks the rest of the
+    file as a comment" do not apply on `src/symbol-uses.ts`: Keeping this as is.
+    A `/*` inside a string only marks more lines as comment, so a fix after it
+    keeps its thread open, the safe side for a check that closes a blocker
+    thread. The doc comment of `blockCommentLines` states this limit. Skipping
+    strings would need the string syntax of each language, whic'
+  scope: repo
+  path: src/symbol-uses.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-22
