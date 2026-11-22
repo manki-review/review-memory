@@ -358,3 +358,15 @@
   path: src/refute.ts
   source: manki-review/manki#1905
   created_at: 2026-11-22
+- id: learn-1795307977990
+  content: 'Findings like "The new fixture does not test the acceptance criterion,
+    and no offline test fails if the prompt fix is reverted" do not apply on
+    `src/judge.fixtures/grading/43_cut_list_note.json`: Skipping this one. The
+    fixture is for the live judge replay, which runs before the release, and it
+    checks that the judge grades the cut-list finding as a proven warning with
+    no doubt about defect, which is the judge half of the fix. The refuter half
+    is a prompt rule whose result depends on the model'
+  scope: repo
+  path: src/judge.fixtures/grading/43_cut_list_note.json
+  source: manki-review/manki#1909
+  created_at: 2026-11-22
