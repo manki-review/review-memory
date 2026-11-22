@@ -311,3 +311,15 @@
   path: src/refute.ts
   source: manki-review/manki#1905
   created_at: 2026-11-22
+- id: learn-1795306869333
+  content: 'Findings like "Fixes in `.txt` files such as `requirements.txt` or
+    `CMakeLists.txt` are never checked as fixes elsewhere" do not apply on
+    `src/refute.ts`: Keeping this as is. A thread fixed in a `.txt` file stays
+    open, which is the safe side for a check that closes a blocker thread, and a
+    person can still resolve it. `requirements.txt` and similar files hold a
+    version pin or a build line, where the text the PR author wrote is the whole
+    change, so leav'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-22
