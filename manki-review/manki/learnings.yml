@@ -404,3 +404,15 @@
   path: src/refute.ts
   source: manki-review/manki#1909
   created_at: 2026-11-22
+- id: learn-1795310014841
+  content: 'Findings like "The "Fix seen in" note is posted again on every round
+    that names the same fix" do not apply on `src/index.ts`: Keeping this as is.
+    The note goes out only on a round whose push changed the named file again,
+    since `fixesElsewhere` in src/review.ts requires
+    `pushChangedFiles.has(fixedIn)`, and only when both refuters confirm the fix
+    again on that new head. A later note therefore says something new: the fix
+    stil'
+  scope: repo
+  path: src/index.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-22
