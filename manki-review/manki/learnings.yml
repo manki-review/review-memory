@@ -484,3 +484,15 @@
   path: src/recap.ts
   source: manki-review/manki#1943
   created_at: 2026-11-22
+- id: learn-1795360054877
+  content: 'Findings like "The docs promise an answer to `/manki review` on a
+    merged PR, but the token service drops the command before any run sta" do
+    not apply on `docs/getting-started.md`: Fixed in the token service:
+    manki-review/token-service#137 (merged) dispatches a review command or a box
+    tick on a closed or merged PR, and still drops reviews started by a push.
+    Once it is deployed, the answer and the Review anyway box documented here
+    are what users see. The "Tracked in #1438" link'
+  scope: repo
+  path: docs/getting-started.md
+  source: manki-review/manki#1940
+  created_at: 2026-11-22
