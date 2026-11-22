@@ -334,3 +334,15 @@
   path: src/symbol-uses.ts
   source: manki-review/manki#1905
   created_at: 2026-11-22
+- id: learn-1795307789457
+  content: 'Findings like "Acceptance criterion on `checkStatus` is met only by
+    prompt wording, with no code guarantee or behavioural test" do not apply on
+    `src/refute.ts`: Leaving this as a prompt fix on purpose, and the PR body
+    says so. Code cannot tell a premise about run time behaviour from a premise
+    about code, so a guard in `checkStatus` would need a new marker that the
+    judge or the refuter sets, and a wrong marker would post warnings nothing
+    confirmed. The fix s'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1909
+  created_at: 2026-11-22
