@@ -461,3 +461,14 @@
   path: src/index.ts
   source: manki-review/manki#1941
   created_at: 2026-11-22
+- id: learn-1795355628149
+  content: 'Findings like "Threads Manki resolved before this change lose their
+    backing and block again" do not apply on `src/recap.ts`: Not changing this.
+    Manki makes clean breaks between versions, without transition rules. A
+    thread resolved before the upgrade with no record blocks again, and a
+    maintainer clears it once by replying or dismissing. That is the blocking
+    side, so nothing is lifted by mistake.'
+  scope: repo
+  path: src/recap.ts
+  source: manki-review/manki#1942
+  created_at: 2026-11-22
