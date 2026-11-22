@@ -438,3 +438,14 @@
   path: src/review.ts
   source: manki-review/manki#1916
   created_at: 2026-11-22
+- id: learn-1795346425635
+  content: 'Findings like "An issue filed from a pre-existing finding in the body
+    now loses its evidence" do not apply on `src/github.ts`: This is the compact
+    item #1929 asks for: a pre-existing finding in the body keeps its title,
+    location, one base line, what goes wrong and the fix, and its evidence lists
+    stay in the round record. An issue filed from it still carries those parts
+    and links the line, which is enough to start on an olde'
+  scope: repo
+  path: src/github.ts
+  source: manki-review/manki#1930
+  created_at: 2026-11-22
