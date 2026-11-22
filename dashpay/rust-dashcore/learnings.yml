@@ -96,3 +96,14 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1482
   created_at: 2026-11-22
+- id: learn-1795386325125
+  content: "Findings like \"A large configured peer list is sorted again on every
+    repair round\" do not apply on `dash-spv/src/network/discovery.rs`: Fixed in
+    a5aaf4a42: `get` no longer copies the pool. It samples straight from the
+    borrowed configured list with one pass of reservoir sampling
+    (`IteratorRandom::choose_multiple`), which keeps only `count` addresses, so
+    a round costs one scan and no allocation of the list's size."
+  scope: repo
+  path: dash-spv/src/network/discovery.rs
+  source: dashpay/rust-dashcore#1482
+  created_at: 2026-11-22
