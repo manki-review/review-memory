@@ -84,3 +84,15 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1371
   created_at: 2026-11-22
+- id: learn-1795355422672
+  content: "Findings like \"A ban recorded during DNS discovery can be cleared by
+    the next handshake\" do not apply on `dash-spv/src/network/manager.rs`: This
+    window can't be reached. DNS runs only once per manager: `discovered` is
+    resolved on the first `get` and kept, and that first `get` is the
+    supervisor's first round, before any peer is connected. `ban_peer` is only
+    called for something a connected peer did, so no ban can land on a
+    discovered add"
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1482
+  created_at: 2026-11-22
