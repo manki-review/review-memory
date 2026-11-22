@@ -472,3 +472,15 @@
   path: src/recap.ts
   source: manki-review/manki#1942
   created_at: 2026-11-22
+- id: learn-1795356210747
+  content: 'Findings like "A threadless blocker whose restatement is itself
+    restated on a thread still gets a second thread" do not apply on
+    `src/recap.ts`: Not changing this. The chain K1, K2, K3 does not occur in
+    the records Manki writes. `foldIntoEarlierFindings` records a restatement of
+    a body-only finding with `sameAs: link.earlier.firstKey`, and
+    `earlierFindings` sets `firstKey` to `entry.sameAs ?? key`. So K3 restating
+    K2 records `sameAs: K1`, th'
+  scope: repo
+  path: src/recap.ts
+  source: manki-review/manki#1943
+  created_at: 2026-11-22
