@@ -381,3 +381,15 @@
   path: src/refute.ts
   source: manki-review/manki#1905
   created_at: 2026-11-22
+- id: learn-1795308296558
+  content: 'Findings like "Acceptance criterion on `checkStatus` is met only by
+    prompt wording, with no code guarantee or behavioural test" do not apply on
+    `src/refute.ts`: Keeping this as a prompt fix, and the PR body states it.
+    The criterion is about a premise that only run time behaviour leaves open.
+    Nothing in `checkStatus` can tell such a premise from a premise about code:
+    `Doubt` carries only `premise` and `decides`, and `settle` in
+    `src/refute.ts` treats both ki'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1909
+  created_at: 2026-11-22
