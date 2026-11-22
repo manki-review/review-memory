@@ -393,3 +393,14 @@
   path: src/refute.ts
   source: manki-review/manki#1909
   created_at: 2026-11-22
+- id: learn-1795309030832
+  content: 'Findings like "Refuter may confirm a run time premise on its code part
+    alone and raise a grade" do not apply on `src/refute.ts`: Fixed in db5e010.
+    The code-part rule now applies only to a warning that no cited line proves,
+    the heading `findingKind` gives such a check. There a confirmation posts the
+    warning and raises nothing: the kind excludes the unproven cap, and a
+    finding with a `gradeIfConfirmed` gets another heading. On '
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1909
+  created_at: 2026-11-22
