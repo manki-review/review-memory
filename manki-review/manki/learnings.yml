@@ -449,3 +449,15 @@
   path: src/github.ts
   source: manki-review/manki#1930
   created_at: 2026-11-22
+- id: learn-1795355503752
+  content: 'Findings like "Check for an already-reviewed head reports an
+    auto-approval as standing without testing reopened blocker threads" do not
+    apply on `src/index.ts`: Not changed in this PR. Reopening a blocking thread
+    has never withdrawn a standing approval, for a round approval or an
+    auto-approval. The thread event runs only the approval check, which posts
+    approvals and dismisses none. So the approval stays over the reopened thread
+    whether or not a later event '
+  scope: repo
+  path: src/index.ts
+  source: manki-review/manki#1941
+  created_at: 2026-11-22
