@@ -416,3 +416,14 @@
   path: src/index.ts
   source: manki-review/manki#1905
   created_at: 2026-11-22
+- id: learn-1795319672129
+  content: "Findings like \"A finding the location already settles as pre-existing
+    never gets the incomplete-fix note\" do not apply on `src/review.ts`: Kept
+    as it is, by design. Issue #1915 scopes the note to the origin check route:
+    the 11 findings it counts were held back by the origin check, and the change
+    is \"the origin check's answer gains one optional field\". A finding the
+    location settles takes no origin check today, and giving it one would s"
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1916
+  created_at: 2026-11-22
