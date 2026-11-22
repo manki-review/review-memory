@@ -107,3 +107,14 @@
   path: dash-spv/src/network/discovery.rs
   source: dashpay/rust-dashcore#1482
   created_at: 2026-11-22
+- id: learn-1795386384127
+  content: "Findings like \"The changed reconnect selection is not covered by a
+    dashd regression test\" do not apply on `dash-spv/src/network/manager.rs`:
+    You're right that a second node is possible, I missed `tests_mempool.rs`.
+    The proposed test still can't catch this change, though. The supervisor asks
+    for `want = deficit.max(1) + DIAL_MARGIN` candidates, so at least 3. With
+    the dashd node or two plus one unreachable address configured, the old code"
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1482
+  created_at: 2026-11-22
