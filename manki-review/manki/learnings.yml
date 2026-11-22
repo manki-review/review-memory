@@ -427,3 +427,14 @@
   path: src/review.ts
   source: manki-review/manki#1916
   created_at: 2026-11-22
+- id: learn-1795321427443
+  content: 'Findings like "The incomplete-fix note is still dropped on test files
+    and on lines a CI tool reports" do not apply on `src/review.ts`: Kept as it
+    is, by design, as already answered in the earlier thread on `hideSeenNotes`,
+    which Manki accepted. The round 2 test-file filter is the deliberate brake
+    on notes in test files, the most common driver of runaway feedback in late
+    rounds, and an incomplete fix in a test helper is not worth li'
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1916
+  created_at: 2026-11-22
