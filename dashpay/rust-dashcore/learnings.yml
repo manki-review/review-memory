@@ -73,3 +73,14 @@
   path: dash-spv/src/network/broker.rs
   source: dashpay/rust-dashcore#1370
   created_at: 2026-11-20
+- id: learn-1795309543095
+  content: 'Findings like "The fixed two-second target keeps high-latency peers at
+    the floor" do not apply on `dash-spv/src/network/manager.rs`: This is
+    intended. `TARGET_QUEUE_SECS` bounds how long a request waits behind the
+    ones before it. A cap that grows with the round trip would bring back the
+    multi-second queues this PR removes. A peer whose round trip under load
+    passes 2 s still works, at about `MIN_CAP_BYTES` per round trip. Admissio'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1371
+  created_at: 2026-11-22
