@@ -346,3 +346,15 @@
   path: src/refute.ts
   source: manki-review/manki#1909
   created_at: 2026-11-22
+- id: learn-1795307843074
+  content: 'Findings like "A fix whose only added code line starts with `*` or
+    `--` or `#` can never clear a thread elsewhere" do not apply on
+    `src/refute.ts`: This code is gone in 0fef60fc. A fix in another file no
+    longer resolves a thread, so the line checks this finding is about were
+    removed. Only the original check stays, that each refuter cites a line the
+    push added to the named file, and it now decides only whether Manki posts a
+    note naming that file'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#1905
+  created_at: 2026-11-22
