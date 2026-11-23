@@ -139,3 +139,15 @@
   path: dash-spv/src/validation/mod.rs
   source: dashpay/rust-dashcore#1336
   created_at: 2026-11-23
+- id: learn-1795441499488
+  content: "Findings like \"Per-script work is bounded but still large for a
+    script full of crafted signatures\" do not apply on
+    `key-wallet/src/transaction_checking/spend_authorization.rs`: Not changed.
+    Dash Core's `MAX_OPS_PER_SCRIPT` (201) counts only non-push opcodes (`opcode
+    ＞ OP_16`, `src/script/interpreter.cpp`), and every signature candidate here
+    is a push. A script of about 1,000 signature pushes and one `OP_NOP` passes
+    that limit, so applying it would not bound the work. The c"
+  scope: repo
+  path: key-wallet/src/transaction_checking/spend_authorization.rs
+  source: dashpay/rust-dashcore#1416
+  created_at: 2026-11-23
