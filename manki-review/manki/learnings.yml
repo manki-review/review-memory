@@ -554,3 +554,15 @@
   path: src/judge.ts
   source: manki-review/manki#1983
   created_at: 2026-11-23
+- id: learn-1795420905792
+  content: 'Findings like "A `rareTrigger` blocker the judge raised alone can
+    never get its blocker back, though the docs say a confirmed trigger d" do
+    not apply on `src/judge.ts`: This is intended, and the docs now say so
+    (686272da). A `rareTrigger` blocker cell that not every finder filed as a
+    blocker follows the same rule as every other doubted blocker cell: the judge
+    raised it alone, so `needsConsequence` asks for a confirmed consequence too.
+    Without one it stays a warning'
+  scope: repo
+  path: src/judge.ts
+  source: manki-review/manki#1983
+  created_at: 2026-11-23
