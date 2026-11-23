@@ -519,3 +519,14 @@
   path: docs/how-reviews-work.md
   source: manki-review/manki#1976
   created_at: 2026-11-23
+- id: learn-1795418109813
+  content: 'Findings like "Issues filed before this change lose their `(tracked in
+    #N)` suffix in the follow-up list" do not apply on `src/issue-box.ts`: Kept
+    as is on purpose. Before this PR no follow-up line named an issue at all, so
+    an older thread loses nothing it had: it shows the same one line without the
+    suffix. Manki has a single user and makes clean breaks between versions, and
+    reading the plain text again would bring back the model-written '
+  scope: repo
+  path: src/issue-box.ts
+  source: manki-review/manki#1980
+  created_at: 2026-11-23
