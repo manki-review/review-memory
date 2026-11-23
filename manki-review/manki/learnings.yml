@@ -566,3 +566,15 @@
   path: src/judge.ts
   source: manki-review/manki#1983
   created_at: 2026-11-23
+- id: learn-1795421002381
+  content: 'Findings like "Leaked-secret, vulnerable-package, hidden-character and
+    most zizmor alerts are not marked `securityAlert`, so two refute" do not
+    apply on `src/static-signals.ts`: Fixed in 27894c9d. Every result from a
+    source that reports only security problems is now marked `securityAlert`,
+    whatever its rule id: `dependency_review`, `dependencies` (osv-scanner),
+    `secrets` (gitleaks), `hidden_characters` and `lockfile`. `checks`,
+    `code_scanning`, `semgrep`, `ast_grep`, `actio'
+  scope: repo
+  path: src/static-signals.ts
+  source: manki-review/manki#1984
+  created_at: 2026-11-23
