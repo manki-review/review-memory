@@ -530,3 +530,15 @@
   path: src/issue-box.ts
   source: manki-review/manki#1980
   created_at: 2026-11-23
+- id: learn-1795418649146
+  content: 'Findings like "The own-fix cap is lost after any round whose
+    evaluation of the thread has no `ownFix`" do not apply on `src/review.ts`:
+    Leaving this as it is. A later round that records a graded evaluation
+    without `ownFix` ends the cap, so the next restatement is checked again
+    before it can be lowered. That errs toward keeping the blocker, which is the
+    side this change has to stay on, since it only lowers a block when it is
+    certain.'
+  scope: repo
+  path: src/review.ts
+  source: manki-review/manki#1978
+  created_at: 2026-11-23
