@@ -507,3 +507,15 @@
   path: src/related-work.ts
   source: manki-review/manki#1955
   created_at: 2026-11-23
+- id: learn-1795418058867
+  content: "Findings like \"Docs still call the thread of a lowered blocker 'a
+    blocker a check disproved'\" do not apply on `docs/how-reviews-work.md`:
+    Line 596 is fixed in 3f0909c: it now says that Manki's record of this review
+    keeps the left-out findings. I left \"The warning of a blocker a check
+    disproved\" as it is on purpose. The new phrase would make it \"the warning
+    of a warning...\", and that sentence describes how the finding is carried,
+    not t"
+  scope: repo
+  path: docs/how-reviews-work.md
+  source: manki-review/manki#1976
+  created_at: 2026-11-23
