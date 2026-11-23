@@ -578,3 +578,15 @@
   path: src/static-signals.ts
   source: manki-review/manki#1984
   created_at: 2026-11-23
+- id: learn-1795421095403
+  content: 'Findings like "Leaked-secret, vulnerable-package, hidden-character and
+    most zizmor alerts are not marked `securityAlert`, so two refute" do not
+    apply on `src/static-signals.ts`: Leaving these on the word match on
+    purpose. Zizmor rules are kept off a blanket mark because #1923 asks that a
+    zizmor false positive two models disprove can stop blocking. For code
+    scanning, `checks`, semgrep and ast-grep, the rule id is the only signal
+    Manki has, and those sources report both secur'
+  scope: repo
+  path: src/static-signals.ts
+  source: manki-review/manki#1984
+  created_at: 2026-11-23
