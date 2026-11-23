@@ -542,3 +542,15 @@
   path: src/review.ts
   source: manki-review/manki#1978
   created_at: 2026-11-23
+- id: learn-1795420683588
+  content: "Findings like \"The round record does not keep the `rareTrigger`
+    answer, so a route replay cannot tell this cap from the other warning c\" do
+    not apply on `src/judge.ts`: Fixed in ad68b1b1. The cap now shows in the
+    round record through the finding's `doubts`: a `grade` doubt worded \"This
+    trigger happens in realistic use: ...\" on a `severe` or `wrong` cell. No
+    other path adds that premise to a blocker row. When a finder filed a
+    blocker, the judge's grade step also kee"
+  scope: repo
+  path: src/judge.ts
+  source: manki-review/manki#1983
+  created_at: 2026-11-23
