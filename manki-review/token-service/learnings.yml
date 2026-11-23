@@ -44,3 +44,13 @@
   path: src/coordinator.ts
   source: manki-review/token-service#141
   created_at: 2026-11-23
+- id: learn-1795452945995
+  content: "Findings like \"Coordinator falls back to the default branch's
+    `.manki.yml`, but Manki reads only the base branch's\" do not apply on
+    `src/coordinator.ts`: Manki does the same fallback since
+    manki-review/manki#2009 (ships in 7.7.6), in `loadConfigAt`. This service
+    deploys after 7.7.6 is published."
+  scope: repo
+  path: src/coordinator.ts
+  source: manki-review/token-service#142
+  created_at: 2026-11-23
