@@ -625,3 +625,15 @@
   path: src/review.ts
   source: manki-review/manki#1986
   created_at: 2026-11-23
+- id: learn-1795452938454
+  content: "Findings like \"The judge is told its lower verdict holds the finding
+    at a `warning`, but a blocker every finder filed still posts as a \" do not
+    apply on `src/judge.ts`: Intended. When every finder filed a blocker, their
+    agreement outranks the judge's own reasoning, so this PR adds no hold there:
+    the hold only covers the case where the finders' grades leave room for the
+    judge's doubt. The prompt now says Manki *may* hold the finding, which
+    matches that. Widening the"
+  scope: repo
+  path: src/judge.ts
+  source: manki-review/manki#2002
+  created_at: 2026-11-23
