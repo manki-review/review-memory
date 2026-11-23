@@ -637,3 +637,14 @@
   path: src/judge.ts
   source: manki-review/manki#2002
   created_at: 2026-11-23
+- id: learn-1795456631624
+  content: 'Findings like "Scope-doubt warning is dropped when its confirmation
+    rests on unstated outside behavior" do not apply on `src/refute.ts`:
+    Intended. A scope warning is added only by a confirmation, so it is a raise,
+    and this PR makes a confirmation that rests on an outside behavior no line
+    states raise nothing, the same as every other raise (`confirmsAll` reads the
+    stored check on purpose). Without a stated behavior there is no proof t'
+  scope: repo
+  path: src/refute.ts
+  source: manki-review/manki#2006
+  created_at: 2026-11-23
