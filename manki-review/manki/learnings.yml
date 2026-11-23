@@ -602,3 +602,15 @@
   path: src/interaction.ts
   source: manki-review/manki#1979
   created_at: 2026-11-23
+- id: learn-1795421417576
+  content: "Findings like \"A blocker cell capped for a rare trigger can return as
+    an uncapped blocker in the next round\" do not apply on `src/judge.ts`:
+    Leaving this as it is. The exact prefix is the premise text Manki itself
+    stored, and the judge is shown it under the prior finding's doubts to name
+    again. A judge that rewords the premise and drops `rareTrigger` is making a
+    fresh call on the trigger, the same as for any cell it states anew.
+    Matching"
+  scope: repo
+  path: src/judge.ts
+  source: manki-review/manki#1983
+  created_at: 2026-11-23
