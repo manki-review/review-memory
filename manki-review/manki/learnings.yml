@@ -590,3 +590,15 @@
   path: src/static-signals.ts
   source: manki-review/manki#1984
   created_at: 2026-11-23
+- id: learn-1795421268242
+  content: "Findings like \"A reply the review did read is reported as unread when
+    that review downgraded the thread\" do not apply on `src/interaction.ts`:
+    Fixed in 33c8d05. The sentence no longer says anything about what the review
+    read. It is now \"This answer reads your reply and replaces the verdict of
+    the review of `abc1234` above.\", which holds whatever the thread's grade
+    was when that review started. The code comment and the docs make no such
+    cla"
+  scope: repo
+  path: src/interaction.ts
+  source: manki-review/manki#1979
+  created_at: 2026-11-23
