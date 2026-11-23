@@ -129,3 +129,13 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1483
   created_at: 2026-11-23
+- id: learn-1795434563840
+  content: 'Findings like "The public InstantLock validators become inaccessible"
+    do not apply on `dash-spv/src/validation/mod.rs`: Per maintainer decision,
+    not changed: The visibility edits are real, but following the exports
+    through lib.rs shows that these validators were not downstream APIs on the
+    supplied base. No downstream compilation was run.'
+  scope: repo
+  path: dash-spv/src/validation/mod.rs
+  source: dashpay/rust-dashcore#1336
+  created_at: 2026-11-23
