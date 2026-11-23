@@ -118,3 +118,14 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1482
   created_at: 2026-11-22
+- id: learn-1795401091060
+  content: 'Findings like "The kick test checks the ban after removal, not at
+    removal" do not apply on `dash-spv/src/network/manager.rs`: Fixed in
+    d2c438071. The test now holds the ban table, so the monitor stops at its
+    ban, and requires the kicked peer to still be in the set at that point. It
+    fails with the ban moved to just after the removal. I kept `mark_on_wire`:
+    the test needs the request owed by the stalled peer specifically, so'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1483
+  created_at: 2026-11-23
