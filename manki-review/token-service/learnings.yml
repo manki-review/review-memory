@@ -32,3 +32,15 @@
   path: src/manki.ts
   source: manki-review/token-service#128
   created_at: 2026-11-18
+- id: learn-1795449987691
+  content: "Findings like \"Repos with `auto_review: false` get a stray Manki
+    check on a push while GitHub computes mergeability\" do not apply on
+    `src/coordinator.ts`: This is the known trade-off of showing the check while
+    a push review is queued, and it was accepted for this PR. Before the PR
+    reads `.manki.yml`, the Worker can't know that `auto_review` is off, so a
+    queued push review on such a repository can show a \"Queued\" check. The
+    retry after the mergeability"
+  scope: repo
+  path: src/coordinator.ts
+  source: manki-review/token-service#141
+  created_at: 2026-11-23
