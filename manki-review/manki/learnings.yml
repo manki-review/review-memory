@@ -648,3 +648,13 @@
   path: src/refute.ts
   source: manki-review/manki#2006
   created_at: 2026-11-23
+- id: learn-1795506548561
+  content: 'Findings like "An unreadable file on one line cancels a vote that the
+    other line has already declined" do not apply on `src/other-finder.ts`: Kept
+    on purpose. A vote lowers a grade only when both of its lines could be
+    checked, so an answer with a line that cannot be read changes nothing. The
+    cost is a finding that keeps its grade, which is the safe side.'
+  scope: repo
+  path: src/other-finder.ts
+  source: manki-review/manki#2030
+  created_at: 2026-11-24
