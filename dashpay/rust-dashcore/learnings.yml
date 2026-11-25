@@ -162,3 +162,14 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1473
   created_at: 2026-11-25
+- id: learn-1795568648109
+  content: "Findings like \"Losing filter hedges can pile up beyond both byte
+    caps\" do not apply on `dash-spv/src/network/broker.rs`: Keeping this
+    without a reservation. The global cap is gone since #1371. A losing copy
+    stays charged to its peer, so later hedges rank that peer by the longer
+    queue and the router counts it against the peer's cap. When the original
+    peer wins, its answer also restarts the `HEDGE_AFTER` wait for all it"
+  scope: repo
+  path: dash-spv/src/network/broker.rs
+  source: dashpay/rust-dashcore#1473
+  created_at: 2026-11-25
