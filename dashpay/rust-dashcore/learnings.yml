@@ -301,3 +301,13 @@
   path: dash-spv/src/network/broker.rs
   source: dashpay/rust-dashcore#1474
   created_at: 2026-11-25
+- id: learn-1795649462603
+  content: 'Findings like "A failed slow-peer search can consume the only crowded
+    retry" do not apply on `dash-spv/src/network/manager.rs`: The crowded swap
+    and its retry record are no longer part of this PR, so a slow-peer search
+    cannot take a crowded retry anymore. The slow-peer path is back to what it
+    is on `dev`.'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1372
+  created_at: 2026-11-25
