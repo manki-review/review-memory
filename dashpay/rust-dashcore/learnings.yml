@@ -251,3 +251,13 @@
   path: dash-spv/src/network/broker.rs
   source: dashpay/rust-dashcore#1474
   created_at: 2026-11-25
+- id: learn-1795618943938
+  content: 'Findings like "Two new forwarding methods exist only to reach
+    `ResponseCosts::cost`, which the broker already takes as a parameter" do not
+    apply on `dash-spv/src/network/peer.rs`: Leaving this. The ranking needs the
+    same estimate the ledger charges, and the two methods only forward to it, as
+    the other `PeerHandle` accessors do.'
+  scope: repo
+  path: dash-spv/src/network/peer.rs
+  source: dashpay/rust-dashcore#1474
+  created_at: 2026-11-25
