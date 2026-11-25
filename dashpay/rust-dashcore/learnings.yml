@@ -195,3 +195,15 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1514
   created_at: 2026-11-25
+- id: learn-1795611750332
+  content: 'Findings like "Local and unroutable addresses get one group per /16,
+    while Dash Core puts each kind in a single group" do not apply on
+    `dash-spv/src/network/discovery.rs`: I left the grouping as it is. What made
+    it matter is gone: gossip now takes its turn by the group of the seed it
+    came from, not by the group of the address it names, and crowded swaps go to
+    seeds only. Addresses a peer invents in private ranges therefore gain no
+    extra turns and cannot trigger a swap'
+  scope: repo
+  path: dash-spv/src/network/discovery.rs
+  source: dashpay/rust-dashcore#1372
+  created_at: 2026-11-25
