@@ -658,3 +658,15 @@
   path: src/other-finder.ts
   source: manki-review/manki#2030
   created_at: 2026-11-24
+- id: learn-1795580061379
+  content: "Findings like \"Rated warnings that hold the approval never show their
+    importance, unlike what the PR and docs say\" do not apply on
+    `src/github.ts`: This does not happen: this comment itself shows
+    \"Importance 5 of 10.\" under its title, since the check runs this PR's own
+    build. `runReview` adds `FOLLOW_UP_TAG` to every warning before the
+    importance call, and only `withImportance` takes it off, when it lowers the
+    warning to a note. So a rated warn"
+  scope: repo
+  path: src/github.ts
+  source: manki-review/manki#2066
+  created_at: 2026-11-25
