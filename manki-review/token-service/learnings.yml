@@ -54,3 +54,15 @@
   path: src/coordinator.ts
   source: manki-review/token-service#142
   created_at: 2026-11-23
+- id: learn-1795578569435
+  content: "Findings like \"Draft notice writes an `auto` box that Manki's
+    settings block does not know, so Manki drops it on its next rewrite\" do not
+    apply on `src/coordinator.ts`: Manki knows the box now:
+    manki-review/manki#2065 is merged to `main` as 0ea9e9359 and adds `auto`
+    with the label \"Review every push\" to `SettingsBox`, `BOX_LABELS` and
+    `SETTINGS_BOXES` in `src/settings.ts`, after `draft`, so the Action parses
+    the box and writes it again. A repository on v7.7.5 loses"
+  scope: repo
+  path: src/coordinator.ts
+  source: manki-review/token-service#146
+  created_at: 2026-11-25
