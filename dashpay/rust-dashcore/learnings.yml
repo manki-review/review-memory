@@ -185,3 +185,13 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1514
   created_at: 2026-11-25
+- id: learn-1795586028964
+  content: 'Findings like "The PR description says a failed probe starts the
+    cooldown, but the code waits for a wake instead" do not apply on
+    `dash-spv/src/network/manager.rs`: The description was outdated when this
+    commit was reviewed. It is corrected now and says that a round held back by
+    the cooldown looks once when it ended, with no periodic check beyond that.'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1514
+  created_at: 2026-11-25
