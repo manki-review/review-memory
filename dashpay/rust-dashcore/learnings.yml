@@ -173,3 +173,15 @@
   path: dash-spv/src/network/broker.rs
   source: dashpay/rust-dashcore#1473
   created_at: 2026-11-25
+- id: learn-1795579860712
+  content: "Findings like \"The timer regression test bypasses production peer
+    measurement\" do not apply on `dash-spv/src/network/manager.rs`: The
+    cooldown test no longer uses `measured_peers` as of aa4f717d9. It is now
+    `a_slow_peer_is_swapped_out_again_after`: every peer of the set joins
+    through the supervisor's own handshake, serves filters at its own rate over
+    loopback, and the candidates do the same.
+    `a_probe_without_a_replacement_wait"
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1514
+  created_at: 2026-11-25
