@@ -261,3 +261,13 @@
   path: dash-spv/src/network/peer.rs
   source: dashpay/rust-dashcore#1474
   created_at: 2026-11-25
+- id: learn-1795619080540
+  content: 'Findings like "`swapped_out` is never pruned, so it grows for the life
+    of the client" do not apply on `dash-spv/src/network/manager.rs`: I left
+    this as it is. The map grows by at most one entry per `SWAP_COOLDOWN` and
+    only for new addresses, and a crowded swap needs the old entries, or it
+    would take a slow seed in and swap it out in turns.'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1372
+  created_at: 2026-11-25
