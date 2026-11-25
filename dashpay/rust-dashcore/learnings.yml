@@ -229,3 +229,14 @@
   path: dash-spv/src/network/discovery.rs
   source: dashpay/rust-dashcore#1372
   created_at: 2026-11-25
+- id: learn-1795612016982
+  content: 'Findings like "The hedge deadline counts the new reply and starts
+    after the routing pass" do not apply on `dash-spv/src/network/broker.rs`:
+    The timing part is fixed in f15fa798a: a request is timed from its own send,
+    with a test that fails without it. Counting the reply itself is intended.
+    The peer has to serve it before the request is done, so a 20 s reply that is
+    served at the expected rate must not be hedged at 10 s. The doc now says'
+  scope: repo
+  path: dash-spv/src/network/broker.rs
+  source: dashpay/rust-dashcore#1474
+  created_at: 2026-11-25
