@@ -207,3 +207,14 @@
   path: dash-spv/src/network/discovery.rs
   source: dashpay/rust-dashcore#1372
   created_at: 2026-11-25
+- id: learn-1795611959447
+  content: 'Findings like "No dashd integration test for the disconnect handling
+    change in `requeue_from`" do not apply on `dash-spv/src/network/broker.rs`:
+    The disconnect handling is in #1473, which is merged, and this PR no longer
+    changes it. That PR added the dashd test
+    `test_filter_sync_passes_frozen_peers`, and unit tests cover the departure
+    of a hedge peer.'
+  scope: repo
+  path: dash-spv/src/network/broker.rs
+  source: dashpay/rust-dashcore#1474
+  created_at: 2026-11-25
