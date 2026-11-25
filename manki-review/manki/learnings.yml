@@ -670,3 +670,15 @@
   path: src/github.ts
   source: manki-review/manki#2066
   created_at: 2026-11-25
+- id: learn-1795616438511
+  content: "Findings like \"A lead carried over from an earlier round says \"No
+    check of the code ran on it.\" even when that round's check left it un\" do
+    not apply on `src/github.ts`: Reworded in `7a8c7943` to \"No check in this
+    round settled it.\", which is true for a carried lead, a failed call and a
+    lead without a check. The sentence is enough, because the review of the
+    earlier round already gave the reason of its own check. So no earlier check
+    is passed through `withEarlierLead"
+  scope: repo
+  path: src/github.ts
+  source: manki-review/manki#2087
+  created_at: 2026-11-25
