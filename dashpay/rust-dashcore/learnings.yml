@@ -151,3 +151,14 @@
   path: key-wallet/src/transaction_checking/spend_authorization.rs
   source: dashpay/rust-dashcore#1416
   created_at: 2026-11-23
+- id: learn-1795568545607
+  content: 'Findings like "Filter batches are hedged while our own link is
+    stalled" do not apply on `dash-spv/src/network/manager.rs`: Not applying
+    this one. `stalled` is also true when two peers owe bytes and none sent any.
+    Two frozen peers look like that too, and the third peer can be idle only
+    because the batch they owe blocks the store. Tried with three dashd nodes,
+    two of them frozen during filter sync, three runs each. Withou'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1473
+  created_at: 2026-11-25
