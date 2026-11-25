@@ -240,3 +240,14 @@
   path: dash-spv/src/network/broker.rs
   source: dashpay/rust-dashcore#1474
   created_at: 2026-11-25
+- id: learn-1795616445257
+  content: 'Findings like "A block whose hedge peer answers `notfound` is never
+    hedged again" do not apply on `dash-spv/src/network/broker.rs`: Correcting
+    my earlier reply: fec412a6d is dropped from this PR. Dash Core answers a
+    block request it cannot serve with nothing at all, not with `notfound`, so
+    the commit handled a reply that never comes. `not_found` is unchanged from
+    `dev`.'
+  scope: repo
+  path: dash-spv/src/network/broker.rs
+  source: dashpay/rust-dashcore#1474
+  created_at: 2026-11-25
