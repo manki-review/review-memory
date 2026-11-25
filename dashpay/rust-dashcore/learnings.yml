@@ -218,3 +218,14 @@
   path: dash-spv/src/network/broker.rs
   source: dashpay/rust-dashcore#1474
   created_at: 2026-11-25
+- id: learn-1795611987754
+  content: 'Findings like "`NetGroup` puts 6to4 and Teredo addresses in their own
+    group, not in the group of the IPv4 address they carry" do not apply on
+    `dash-spv/src/network/discovery.rs`: I left this as it is for the same
+    reason as in the thread on local addresses. A gossiped 6to4 or Teredo
+    address takes its turn by the group of its source and cannot be the target
+    of a crowded swap, so its own group gives it no advantage.'
+  scope: repo
+  path: dash-spv/src/network/discovery.rs
+  source: dashpay/rust-dashcore#1372
+  created_at: 2026-11-25
