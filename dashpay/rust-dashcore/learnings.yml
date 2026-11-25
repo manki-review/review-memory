@@ -271,3 +271,12 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1372
   created_at: 2026-11-25
+- id: learn-1795619150545
+  content: 'Findings like "A large configured peer list can exhaust memory on a
+    repair round" do not apply on `dash-spv/src/network/discovery.rs`: I left
+    this as it is. The list is the configuration of the user, who already holds
+    all of it in memory, and a round makes one short-lived copy.'
+  scope: repo
+  path: dash-spv/src/network/discovery.rs
+  source: dashpay/rust-dashcore#1372
+  created_at: 2026-11-25
