@@ -291,3 +291,13 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1528
   created_at: 2026-11-25
+- id: learn-1795644842485
+  content: 'Findings like "Losing the original carrier of a hedged request sends a
+    third copy and forgets the copy in flight" do not apply on
+    `dash-spv/src/network/broker.rs`: Confirmed as maintainer: accepted. A copy
+    that lands after its carrier was dropped and the request was sent again
+    costs one repeated batch or block, and that is acceptable here.'
+  scope: repo
+  path: dash-spv/src/network/broker.rs
+  source: dashpay/rust-dashcore#1474
+  created_at: 2026-11-25
