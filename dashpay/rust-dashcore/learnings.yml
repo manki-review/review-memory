@@ -311,3 +311,13 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1372
   created_at: 2026-11-25
+- id: learn-1795649873016
+  content: 'Findings like "A candidate that disconnects during the ping prevents
+    the short retry" do not apply on `dash-spv/src/network/manager.rs`: The
+    `reached` flag belonged to the crowded retry, which is no longer part of
+    this PR. A candidate that drops during the ping is still turned away, as on
+    `dev`, and now goes after the other candidates.'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1372
+  created_at: 2026-11-25
