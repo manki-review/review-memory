@@ -280,3 +280,14 @@
   path: dash-spv/src/network/discovery.rs
   source: dashpay/rust-dashcore#1372
   created_at: 2026-11-25
+- id: learn-1795624480435
+  content: 'Findings like "A stall can end a replacement attempt before it is
+    marked for retry" do not apply on `dash-spv/src/network/manager.rs`: Fixed
+    in 6e803184d for failed dials and missing pongs. Both set `swap_wanted`
+    again when the link looks stalled, and such a failed dial does not back off,
+    so the next round still has its candidate. Each has a test case. A pong that
+    arrives past the lag cutoff stays a rejection on purpose: it is a me'
+  scope: repo
+  path: dash-spv/src/network/manager.rs
+  source: dashpay/rust-dashcore#1528
+  created_at: 2026-11-25
