@@ -682,3 +682,15 @@
   path: src/github.ts
   source: manki-review/manki#2087
   created_at: 2026-11-25
+- id: learn-1795710128953
+  content: "Findings like \"Summary still stands for a judge-graded blocker that
+    the vote lowered after an unconfirmed raise\" do not apply on
+    `src/github.ts`: A correction to my earlier reply: the judge's summary is
+    dropped, not kept, for a raise-capped warning, both before and after the
+    vote. `judgeGraded` in `src/github.ts` (`roundSentence`) reads the blocker
+    cell from `judgeCell ?? cell` and finds no `gradeIfConfirmed`, so it counts
+    the finding as one "
+  scope: repo
+  path: src/github.ts
+  source: manki-review/manki#2043
+  created_at: 2026-11-26
