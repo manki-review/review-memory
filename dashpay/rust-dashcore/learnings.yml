@@ -343,3 +343,13 @@
   path: .github/scripts/draft_ci.py
   source: dashpay/rust-dashcore#1536
   created_at: 2026-11-27
+- id: learn-1795776716048
+  content: 'Findings like "The push tests exercise a fake gate instead of the
+    workflow gate" do not apply on `.github/scripts/test_draft_ci.py`: Leaving
+    it without a test. A test that compares the `ASK` expression with a copy of
+    itself fails on every intended change and passes a wrong change made in both
+    places, so it would only repeat the expression.'
+  scope: repo
+  path: .github/scripts/test_draft_ci.py
+  source: dashpay/rust-dashcore#1536
+  created_at: 2026-11-27
