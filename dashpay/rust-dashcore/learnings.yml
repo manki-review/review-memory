@@ -321,3 +321,14 @@
   path: dash-spv/src/network/manager.rs
   source: dashpay/rust-dashcore#1372
   created_at: 2026-11-25
+- id: learn-1795752982000
+  content: "Findings like \"The regression tests bypass the handler that prepares
+    batches for commit\" do not apply on `dash-spv/src/sync/filters/manager.rs`:
+    I'm keeping these tests at the commit guard; no change here. They target one
+    interleaving: the wallet's query grows after the commit's reconcile has read
+    it, and before the commit takes the wallet write lock. The storage and
+    filter event handlers can't place a growth inside that window on demand. Th"
+  scope: repo
+  path: dash-spv/src/sync/filters/manager.rs
+  source: dashpay/rust-dashcore#1511
+  created_at: 2026-11-27
