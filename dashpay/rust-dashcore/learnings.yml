@@ -332,3 +332,14 @@
   path: dash-spv/src/sync/filters/manager.rs
   source: dashpay/rust-dashcore#1511
   created_at: 2026-11-27
+- id: learn-1795772557772
+  content: 'Findings like "A stale checkbox request can cancel CI for a newer
+    commit" do not apply on `.github/scripts/draft_ci.py`: Fixed in 39c62e49d.
+    The request reads the PR again just before each restart, and only reports
+    when the head moved or the PR was marked ready. Its concurrency groups stay
+    as they are: between that read and the restart there are milliseconds, and a
+    group per attempt would keep a new push from cancelli'
+  scope: repo
+  path: .github/scripts/draft_ci.py
+  source: dashpay/rust-dashcore#1536
+  created_at: 2026-11-27
