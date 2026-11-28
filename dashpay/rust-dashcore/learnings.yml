@@ -353,3 +353,17 @@
   path: .github/scripts/test_draft_ci.py
   source: dashpay/rust-dashcore#1536
   created_at: 2026-11-27
+- id: learn-1795868381334
+  content: 'Findings like "The rewind guard works only for wallets whose setters
+    bump `account_generation`, though the scan already records the hei" do not
+    apply on
+    `key-wallet/src/wallet/managed_wallet_info/wallet_info_interface.rs`: Partly
+    fixed in ad2194d68: every in-repo `WalletInterface` that tracks a generation
+    now bumps it when it lowers `synced_height`. That means
+    `ManagedWalletInfo::update_synced_height` and `truncate_above` (previous
+    commit) and `MultiMockWallet::truncate_above` (this commit). `MockWallet`
+    and the singl'
+  scope: repo
+  path: key-wallet/src/wallet/managed_wallet_info/wallet_info_interface.rs
+  source: dashpay/rust-dashcore#1546
+  created_at: 2026-11-28
